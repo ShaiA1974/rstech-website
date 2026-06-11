@@ -1,26 +1,56 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-rstech-red: #CC1C1C;
+  --color-rstech-red-dark: #A01515;
+  --color-rstech-red-light: #e02424;
+  --color-rstech-grey: #7A8A99;
+  --color-rstech-grey-light: #f0f4f8;
+  --color-rstech-grey-mid: #e2e8f0;
+  --color-text-primary: #1a202c;
+  --color-text-secondary: #4a5568;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Heebo", "Inter", Arial, Helvetica, sans-serif;
+  color: var(--color-text-primary);
+  background: #ffffff;
+  overflow-x: hidden;
+}
+
+[lang="he"] body,
+[dir="rtl"] body {
+  font-family: "Heebo", Arial, sans-serif;
+}
+
+html[data-a11y-font="1"] { font-size: 112.5%; }
+html[data-a11y-font="2"] { font-size: 125%; }
+
+html[data-a11y-no-anim] *,
+html[data-a11y-no-anim] *::before,
+html[data-a11y-no-anim] *::after {
+  animation-duration: 0.001ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.001ms !important;
+  scroll-behavior: auto !important;
+}
+
+html[data-a11y-links] a,
+html[data-a11y-links] button {
+  outline: 3px solid #f59e0b !important;
+  outline-offset: 2px !important;
+  border-radius: 3px !important;
+}
+
+html[data-a11y-readable],
+html[data-a11y-readable] * {
+  font-family: Arial, Helvetica, sans-serif !important;
+  letter-spacing: 0.04em !important;
+  word-spacing: 0.1em !important;
+  line-height: 1.7 !important;
 }

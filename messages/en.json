@@ -1,0 +1,240 @@
+{
+  "nav": {
+    "home": "Home",
+    "companies": "Companies",
+    "products": "Products",
+    "about": "About",
+    "contact": "Contact",
+    "viewAllCompanies": "View All Companies",
+    "viewAllProducts": "View All Gore Products"
+  },
+  "home": {
+    "hero": {
+      "title": "Your Technology Partner in Israel",
+      "subtitle": "RSTECH Electronics Ltd is the authorized Israeli representative of world-leading technology companies — bringing global innovation to local industries.",
+      "ctaCompanies": "Our Partners",
+      "ctaContact": "Contact Us",
+      "badge": "Authorized Representative — Israel",
+      "stat1Label": "Partners",
+      "stat1Value": "3 Global Leaders",
+      "stat2Label": "Based in",
+      "stat2Value": "Tel Aviv, Israel",
+      "stat3Label": "Industries",
+      "stat3Value": "Multiple Sectors",
+      "stat4Label": "Status",
+      "stat4Value": "Authorized Rep."
+    },
+    "industries": {
+      "label": "Serving Israeli companies in:",
+      "medical": "Medical Devices",
+      "semiconductor": "Semiconductors",
+      "defense": "Defense & Aerospace",
+      "industrial": "Industrial",
+      "telecom": "Telecommunications",
+      "test": "Test & Measurement"
+    },
+    "companies": {
+      "title": "Our Principal Companies",
+      "subtitle": "We represent three world-class technology leaders in Israel",
+      "learnMore": "Learn More"
+    },
+    "about": {
+      "title": "RSTECH Electronics Ltd",
+      "body": "RSTECH Electronics Ltd is the authorized Israeli representative of leading global technology companies. We provide direct access to world-class products for Israeli customers in medical, semiconductor, defense, and industrial markets — backed by local technical support and Hebrew-language service.",
+      "learnMore": "About Us"
+    },
+    "why": {
+      "title": "Why RSTECH?",
+      "local": "Local Support",
+      "localDesc": "Israeli-based technical team for fast response and on-site support.",
+      "authorized": "Authorized Representative",
+      "authorizedDesc": "Direct manufacturer relationships ensure product authenticity and full warranty.",
+      "expertise": "Technical Expertise",
+      "expertiseDesc": "Deep knowledge of advanced components for demanding industrial, medical, and defense applications.",
+      "range": "Multi-Brand Portfolio",
+      "rangeDesc": "Access to products from W.L. Gore, Tsubaki Kabelschlepp, and JAE — all under one roof."
+    }
+  },
+  "companies": {
+    "title": "Our Principal Companies",
+    "subtitle": "World-class technology partners represented by RSTECH Electronics in Israel"
+  },
+  "gore": {
+    "name": "W.L. Gore & Associates",
+    "tagline": "Pushing the boundaries of what's possible",
+    "description": "W.L. Gore & Associates is a global materials science company renowned for its innovative fluoropolymer solutions, including GORE-TEX® fabrics, vascular grafts, and advanced electronic interconnect products.",
+    "industries": "Medical, Aerospace, Defense, Electronics, Industrial",
+    "products": "Cable & Interconnect Assemblies, Vascular Grafts, Filtration Products, Sealants"
+  },
+  "tsubaki": {
+    "name": "Tsubaki Kabelschlepp",
+    "tagline": "Moving. Protecting. Guiding.",
+    "description": "Tsubaki Kabelschlepp is a world leader in energy chain systems and cable management solutions, providing robust cable carriers, drag chains, and triflex® systems for dynamic applications in automation and machinery.",
+    "industries": "Automation, Machine Tools, Robotics, Semiconductor, Medical",
+    "products": "Energy Chains, Cable Carriers, Triflex® Systems, Steel Carriers, Mounting Accessories"
+  },
+  "jae": {
+    "name": "JAE — Japan Aviation Electronics",
+    "tagline": "Connecting the world with precision",
+    "description": "JAE (Japan Aviation Electronics Industry) is a premier manufacturer of high-precision connectors and electronic components, delivering reliable connectivity solutions for aerospace, automotive, consumer electronics, and industrial applications.",
+    "industries": "Aerospace, Automotive, Consumer Electronics, Industrial, Medical",
+    "products": "Board-to-Board Connectors, Wire-to-Board Connectors, FPC Connectors, Circular Connectors, Coaxial Connectors"
+  },
+  "about": {
+    "badge": "About RSTECH",
+    "title": "Who We Are",
+    "subtitle": "RSTECH Electronics Ltd — Israel's gateway to world-class technology.",
+    "body1": "RSTECH Electronics Ltd is an Israeli company specializing in the representation and distribution of premium global technology brands. We serve customers across a wide range of industries including medical devices, semiconductor manufacturing, defense, aerospace, and industrial automation.",
+    "body2": "As the authorized Israeli representative of W.L. Gore & Associates, Tsubaki Kabelschlepp, and JAE, we provide direct access to these manufacturers' full product portfolios, supported by local technical expertise and Hebrew-language service.",
+    "mission": "Our Mission",
+    "missionBody": "To be the most trusted technology partner for Israeli companies — connecting local industries with the world's best components, backed by dedicated technical support.",
+    "industriesTitle": "Industries We Serve",
+    "partnersTitle": "Our Principal Companies",
+    "ctaTitle": "Ready to Work Together?",
+    "ctaBody": "Contact our team for technical consultation, product specifications, or pricing.",
+    "ctaButton": "Get in Touch",
+    "why": [
+      "Authorized representative with direct manufacturer relationships",
+      "Local Israeli technical team for fast, on-site support",
+      "Hebrew and English service",
+      "Full access to global product catalogs",
+      "Competitive pricing through direct representation"
+    ],
+    "industries": [
+      { "name": "Medical Devices", "icon": "microscope" },
+      { "name": "Semiconductors", "icon": "cpu" },
+      { "name": "Defense & Aerospace", "icon": "shield" },
+      { "name": "Industrial Automation", "icon": "factory" },
+      { "name": "Telecommunications", "icon": "radio" },
+      { "name": "Test & Measurement", "icon": "gauge" }
+    ]
+  },
+  "contact": {
+    "badge": "Get in Touch",
+    "title": "Contact RSTECH",
+    "subtitle": "Reach out for technical consultation, product inquiries, or pricing — our team responds quickly.",
+    "detailsTitle": "Contact Details",
+    "emailLabel": "Email",
+    "phoneLabel": "Phone",
+    "addressLabel": "Address",
+    "address": "64 Ashkenazy St., Tel-Aviv, Israel 6986928",
+    "nameLabel": "Full Name",
+    "namePlaceholder": "Your name",
+    "companyLabel": "Company",
+    "companyPlaceholder": "Your company",
+    "productLabel": "Product / Company of Interest",
+    "productPlaceholder": "e.g. W.L. Gore cables, JAE connectors...",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Describe your inquiry...",
+    "phonePlaceholder": "Your phone number",
+    "emailPlaceholder": "your@email.com",
+    "submit": "Send Message",
+    "sending": "Sending...",
+    "successTitle": "Message Sent!",
+    "successBody": "Thank you for contacting us. We'll get back to you shortly.",
+    "errorBody": "Something went wrong. Please try again or email us directly at info@rstech.co.il.",
+    "required": "This field is required",
+    "invalidEmail": "Please enter a valid email address",
+    "trustNote": "All inquiries are handled by our local Israeli team. We respond in Hebrew and English.",
+    "visitPartner": "Visit Partner Website"
+  },
+  "footer": {
+    "tagline": "Authorized Israeli representative of W.L. Gore, Tsubaki Kabelschlepp & JAE.",
+    "quickLinks": "Quick Links",
+    "contactUs": "Contact Us",
+    "rights": "All rights reserved.",
+    "privacy": "Privacy Policy",
+    "accessibility": "Accessibility",
+    "address": "64 Ashkenazy St., Tel-Aviv, Israel 6986928"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "subtitle": "RSTECH Electronics is committed to protecting your privacy and ensuring you understand our data practices.",
+    "lastUpdated": "Last updated: May 2026",
+    "whoWeAre": "Who We Are",
+    "whoWeAreText": "RSTECH Electronics Ltd is an Israeli company specializing in the representation and distribution of premium global technology brands. We serve customers across medical devices, semiconductors, defense, aerospace, and industrial automation sectors.",
+    "whatWeCollect": "What Information We Collect",
+    "whatWeCollectText": "We collect information you voluntarily provide through our contact form to respond to your inquiries:",
+    "collectList": [
+      "Full name and company name",
+      "Email address and phone number",
+      "Message content and product interests",
+      "Any additional information you provide in your inquiry"
+    ],
+    "howWeUse": "How We Use Your Information",
+    "howWeUseText": "The information you provide is used exclusively for:",
+    "useList": [
+      "Responding to your inquiry or question",
+      "Providing technical consultation or product information",
+      "Following up on sales inquiries or requests for quotation",
+      "Improving our service and customer communication"
+    ],
+    "dataSharing": "Data Sharing",
+    "dataSharingText": "We do not sell your personal information to third parties. Information is only shared with our principal manufacturers (W.L. Gore, Tsubaki Kabelschlepp, JAE) when necessary to fulfill your specific product or technical requests, and only with your knowledge.",
+    "dataRetention": "How Long We Keep Your Data",
+    "dataRetentionText": "We retain information submitted through our contact form for 3 years to maintain service records and follow-up communications. You may request deletion of your data at any time by contacting us.",
+    "cookies": "Cookies & Local Storage",
+    "cookiesText": "Our website uses essential cookies to maintain site functionality and analytics to improve user experience. We do not use cookies for marketing or tracking purposes. You can disable cookies through your browser settings.",
+    "yourRights": "Your Rights",
+    "yourRightsText": "Under Israeli Privacy Protection Law and GDPR, you have the right to:",
+    "rightsList": [
+      "Access your personal data and request a copy",
+      "Correct inaccurate information",
+      "Request deletion of your data",
+      "Restrict processing of your information",
+      "Receive your data in a portable format",
+      "Withdraw consent for processing"
+    ],
+    "privacyContact": "Privacy Contact & Requests",
+    "privacyContactText": "For privacy-related requests or inquiries, please contact us at:",
+    "privacyEmail": "info@rstech.co.il",
+    "privacyPhone": "03-6490454",
+    "responseTime": "We commit to responding to privacy requests within 5 business days."
+  },
+  "accessibility": {
+    "title": "Accessibility Statement",
+    "subtitle": "RSTECH Electronics is committed to ensuring digital accessibility for all users.",
+    "commitment": "Our Commitment",
+    "commitmentText": "RSTECH Electronics is committed to making our website accessible to all users, including those with disabilities. We strive to conform to WCAG 2.1 Level AA accessibility guidelines.",
+    "features": "Accessibility Features",
+    "featuresList": [
+      "Semantic HTML structure for proper content hierarchy",
+      "Keyboard navigation support throughout the site",
+      "Alt text for all images and visual content",
+      "High contrast color schemes for readability",
+      "Responsive design that works on all device sizes",
+      "Clear and descriptive link text",
+      "Form labels and error messages for accessibility"
+    ],
+    "continuous": "Continuous Improvement",
+    "continuousText": "We regularly test and improve accessibility features. If you encounter any accessibility barriers on our website, please let us know.",
+    "feedbackTitle": "Feedback & Accessibility Issues",
+    "feedbackText": "If you experience difficulty accessing any part of this website, please contact us:",
+    "feedbackEmail": "info@rstech.co.il",
+    "feedbackPhone": "03-6490454",
+    "feedbackResponse": "We will respond to accessibility feedback within 3 business days.",
+    "toolbarTitle": "Accessibility Toolbar",
+    "toolbarIntro": "Use the accessibility toolbar on the left side of the page to adjust:",
+    "toolbarFontSize": "Font Size: Increase text size up to 125% for better readability",
+    "toolbarContrast": "Color Contrast: Choose high contrast or inverted color modes",
+    "toolbarDisplay": "Display Options: Enable grayscale mode or dyslexia-friendly fonts",
+    "toolbarNavigation": "Navigation: Full keyboard navigation support throughout the site",
+    "knownLimitations": "Known Limitations",
+    "knownLimitationsIntro": "While we strive for full accessibility, some areas may have limitations:",
+    "limitationThirdParty": "Embedded third-party content may not fully comply with accessibility standards",
+    "limitationPDF": "PDF documents may have varying levels of screen reader optimization",
+    "limitationLegacy": "Legacy content is continuously being updated for accessibility",
+    "limitationContact": "If you encounter any accessibility barriers, please let us know immediately so we can address them.",
+    "complianceStatement": "This website targets compliance with Israeli Standard SI 5568, which is based on WCAG 2.1 Level AA standards."
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "heading": "404",
+    "message": "The page you are looking for doesn't exist or has been moved.",
+    "suggestion": "Let's get you back on track:",
+    "homeButton": "Return to Home",
+    "companiesButton": "Browse Our Partners",
+    "contactButton": "Contact Us",
+    "allLinks": "All Pages"
+  }
+}

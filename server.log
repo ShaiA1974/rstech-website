@@ -1,0 +1,21 @@
+
+> rstech-website@0.1.0 dev
+> next dev
+
+▲ Next.js 16.2.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.1.154:3000
+✓ Ready in 1307ms
+[Error: Failed to open database
+
+Caused by:
+    0: Loading persistence directory failed
+    1: invalid digit found in string] {
+  code: 'GenericFailure'
+}
+[?25h
+npm notice
+npm notice New minor version of npm available! 11.12.1 -> 11.16.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.16.0
+npm notice To update run: npm install -g npm@11.16.0
+npm notice
