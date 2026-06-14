@@ -33,6 +33,7 @@ export default function Footer() {
               {[
                 { href: "/", label: nav("home") },
                 { href: "/companies", label: nav("companies") },
+                { href: "/knowledge-base", label: nav("knowledgeBase") },
                 { href: "/about", label: nav("about") },
                 { href: "/contact", label: nav("contact") },
               ].map((link) => (
