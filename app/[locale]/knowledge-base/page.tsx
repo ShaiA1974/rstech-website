@@ -55,22 +55,24 @@ export default async function KnowledgeBasePage({ params }: Props) {
   );
 }
 
-const CATEGORY_ICON = {
+type CategoryKey = "cable-carriers" | "connectors" | "industrial-selection";
+
+const CATEGORY_ICON: Record<CategoryKey, typeof Zap> = {
   "cable-carriers": Zap,
   "connectors": Lightbulb,
   "industrial-selection": BookOpen,
-} as const;
+};
 
-const CATEGORY_COLORS = {
+const CATEGORY_COLORS: Record<CategoryKey, string> = {
   "cable-carriers": "bg-orange-50 text-orange-700 border-orange-200",
   "connectors": "bg-blue-50 text-blue-700 border-blue-200",
   "industrial-selection": "bg-purple-50 text-purple-700 border-purple-200",
-} as const;
+};
 
 function KnowledgeBaseContent({ locale }: { locale: string }) {
   const isHe = locale === "he";
 
-  const categoryLabel: Record<string, string> = {
+  const categoryLabel: Record<CategoryKey, string> = {
     "cable-carriers": isHe ? "נושאי כבלים" : "Cable Carriers",
     "connectors": isHe ? "מחברים" : "Connectors",
     "industrial-selection": isHe ? "בחירה תעשייתית" : "Industrial Selection",
@@ -82,7 +84,7 @@ function KnowledgeBaseContent({ locale }: { locale: string }) {
       acc[article.category].push(article);
       return acc;
     },
-    {} as Record<string, typeof articles>
+    {} as Record<CategoryKey, typeof articles>
   );
 
   return (
@@ -115,7 +117,7 @@ function KnowledgeBaseContent({ locale }: { locale: string }) {
 
       {/* Articles by category */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        {(Object.keys(groupedArticles) as Array<keyof typeof groupedArticles>).map((category) => {
+        {(Object.keys(groupedArticles) as CategoryKey[]).map((category) => {
           const Icon = CATEGORY_ICON[category];
           const colorClass = CATEGORY_COLORS[category];
 
