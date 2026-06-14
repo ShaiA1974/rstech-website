@@ -37,7 +37,7 @@ interface ArticleSection {
 
 interface ArticleSubsection {
   title: string;
-  content: string[];
+  content?: string[];
   items?: string[];
 }
 
