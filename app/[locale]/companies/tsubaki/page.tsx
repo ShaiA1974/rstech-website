@@ -20,6 +20,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       canonical: `https://rstech.co.il/${locale}/companies/tsubaki`,
       languages: { en: "https://rstech.co.il/en/companies/tsubaki", he: "https://rstech.co.il/he/companies/tsubaki", "x-default": "https://rstech.co.il/en/companies/tsubaki" },
     },
+    openGraph: {
+      title: "Tsubaki Kabelschlepp",
+      description: "Energy chain systems, cable carriers, and cable management solutions for dynamic applications",
+      url: `https://rstech.co.il/${locale}/companies/tsubaki`,
+      type: "website",
+      images: [
+        {
+          url: "https://rstech.co.il/products/tsubaki/cc-robotrax.jpg",
+          width: 1200,
+          height: 630,
+          alt: "Tsubaki cable carrier systems",
+        },
+      ],
+    },
   };
 }
 

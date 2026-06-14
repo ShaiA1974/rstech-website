@@ -29,7 +29,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         "x-default": "https://rstech.co.il/en/knowledge-base",
       },
     },
-    openGraph: { url: `https://rstech.co.il/${locale}/knowledge-base` },
+    openGraph: {
+      title: isHe ? "בסיס ידע" : "Knowledge Base",
+      description: isHe
+        ? "מדריכים טכניים על בחירת נושאי כבלים ומחברים"
+        : "Technical guides on cable carriers and industrial interconnects",
+      url: `https://rstech.co.il/${locale}/knowledge-base`,
+      type: "website",
+    },
   };
 }
 

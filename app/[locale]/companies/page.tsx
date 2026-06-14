@@ -59,6 +59,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       canonical: `https://rstech.co.il/${locale}/companies`,
       languages: { en: "https://rstech.co.il/en/companies", he: "https://rstech.co.il/he/companies", "x-default": "https://rstech.co.il/en/companies" },
     },
+    openGraph: {
+      title: "Our Principal Companies",
+      description: "Authorized representative of W.L. Gore, Tsubaki Kabelschlepp, and JAE in Israel",
+      url: `https://rstech.co.il/${locale}/companies`,
+      type: "website",
+    },
   };
 }
 

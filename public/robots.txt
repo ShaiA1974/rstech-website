@@ -1,0 +1,67 @@
+# RSTECH Electronics - robots.txt
+# Comprehensive crawler management for search engines and AI systems
+
+# ============================================
+# MAIN RULE: Allow all crawlers by default
+# ============================================
+User-agent: *
+Allow: /
+Disallow: /private/
+Disallow: /.next/
+Disallow: /_next/
+
+# ============================================
+# SEARCH ENGINE CRAWLERS (ALLOW)
+# ============================================
+# Google Search - primary crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+# Bing/Microsoft
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# ============================================
+# AI TRAINING & SEARCH CRAWLERS (ALLOW)
+# Visibility in AI systems drives brand awareness
+# ============================================
+
+# OpenAI - ChatGPT model training
+User-agent: GPTBot
+Allow: /
+
+# Anthropic - Claude model training
+User-agent: ClaudeBot
+Allow: /
+
+# Perplexity AI - Hybrid search + training
+User-agent: PerplexityBot
+Allow: /
+
+# ByteDance - ByteSpider (training)
+User-agent: Bytespider
+Allow: /
+
+# Google - Gemini training (NOT search)
+# Note: Blocking Google-Extended does NOT affect Google Search indexing
+User-agent: Google-Extended
+Allow: /
+
+# Common Crawl - Public dataset
+User-agent: CCBot
+Allow: /
+
+# ============================================
+# SITE RESOURCES
+# ============================================
+Sitemap: https://www.rstech.co.il/sitemap.xml
+Crawl-delay: 1
+
+# IndexNow support (Bing, Yandex, Naver)
+# IndexNow URL: https://www.bing.com/indexnow

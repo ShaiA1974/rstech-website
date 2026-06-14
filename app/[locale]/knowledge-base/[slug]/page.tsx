@@ -29,6 +29,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         "x-default": `https://rstech.co.il/en/knowledge-base/${slug}`,
       },
     },
+    openGraph: {
+      title: `How to Choose the Right Cable Carrier for Your System`,
+      description: "Engineering guide with practical examples for cable carrier selection",
+      url: `https://rstech.co.il/${locale}/knowledge-base/${slug}`,
+      type: "article",
+      images: [
+        {
+          url: `https://rstech.co.il${article.heroImageLocal || '/products/tsubaki/cc-robotrax.jpg'}`,
+          width: 1200,
+          height: 630,
+          alt: article.heroAlt,
+        },
+      ],
+    },
   };
 }
 
@@ -86,8 +100,34 @@ function ArticleContent({
   article: (typeof articles)[0];
   locale: string;
 }) {
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "How to Choose the Right Cable Carrier for Your System",
+    "description": "A complete engineering guide to selecting cable carriers based on number of cables, bending radius, travel length, and total cost of ownership.",
+    "image": `https://rstech.co.il${article.heroImageLocal || '/products/tsubaki/cc-robotrax.jpg'}`,
+    "datePublished": article.date,
+    "dateModified": article.date,
+    "author": {
+      "@type": "Organization",
+      "name": "RSTECH Electronics"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "RSTECH Electronics",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://rstech.co.il/logo.svg"
+      }
+    }
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
       {/* Article Header */}
       <div className="relative bg-[#0F172A] overflow-hidden">
         <div
