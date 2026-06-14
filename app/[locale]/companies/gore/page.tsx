@@ -86,6 +86,7 @@ const INDUSTRIES = [
 
 function GoreContent({ locale }: { locale: string }) {
   const isRtl = locale === "he";
+  const t = useTranslations();
 
   return (
     <>
@@ -105,7 +106,7 @@ function GoreContent({ locale }: { locale: string }) {
             className="inline-flex items-center gap-2 text-slate-400 hover:text-white text-sm mb-8 transition-colors cursor-pointer"
           >
             <ArrowLeft className="w-4 h-4" />
-            All Companies
+            {t("nav.companies")}
           </Link>
           <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-8 mb-8">
             {/* Logo Section */}
@@ -124,13 +125,13 @@ function GoreContent({ locale }: { locale: string }) {
             <div className="flex-1">
               <div className="inline-flex items-center gap-2 bg-blue-500/20 border border-blue-500/40 text-blue-300 text-sm font-medium px-4 py-1.5 rounded-full mb-6">
                 <ShieldCheck className="w-4 h-4 shrink-0" />
-                <span>Authorized Israeli Representative</span>
+                <span>{t("gore.tagline")}</span>
               </div>
               <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-                W.L. Gore & Associates
+                {t("gore.name")}
               </h1>
               <p className="text-slate-300 text-lg max-w-2xl">
-                Pushing the boundaries of what&apos;s possible through advanced materials science.
+                {t("gore.description")}
               </p>
             </div>
           </div>

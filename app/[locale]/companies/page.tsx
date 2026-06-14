@@ -8,6 +8,45 @@ import Footer from "@/components/Footer";
 import { FadeUp, StaggerGrid, StaggerCard } from "@/components/ui/AnimatedSections";
 import { ArrowRight, Building2, ExternalLink } from "lucide-react";
 
+const COMPANY_CONFIG = [
+  {
+    key: "gore",
+    logo: "/logos/gore.svg",
+    href: "/companies/gore",
+    externalUrl: "https://www.gore.com",
+    accent: "from-blue-50 to-blue-100",
+    border: "border-blue-200",
+    dot: "bg-blue-500",
+    iconBg: "bg-blue-100",
+    iconColor: "text-blue-600",
+    backgroundImage: "/products/gore/cables-ethernet.jpg",
+  },
+  {
+    key: "tsubaki",
+    logo: "/logos/tsubaki.svg",
+    href: "/companies/tsubaki",
+    externalUrl: "https://www.kabelschlepp.com",
+    accent: "from-orange-50 to-orange-100",
+    border: "border-orange-200",
+    dot: "bg-orange-500",
+    iconBg: "bg-orange-100",
+    iconColor: "text-orange-600",
+    backgroundImage: "/products/tsubaki/cc-robotrax.jpg",
+  },
+  {
+    key: "jae",
+    logo: "/logos/jae.svg",
+    href: "/companies/jae",
+    externalUrl: "https://www.jae.com/en",
+    accent: "from-slate-50 to-slate-100",
+    border: "border-slate-200",
+    dot: "bg-slate-500",
+    iconBg: "bg-slate-100",
+    iconColor: "text-slate-600",
+    backgroundImage: "/products/jae/jae-fi.jpg",
+  },
+];
+
 type Props = { params: Promise<{ locale: string }> };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -38,59 +77,15 @@ export default async function CompaniesPage({ params }: Props) {
   );
 }
 
-const COMPANIES = [
-  {
-    key: "gore",
-    logo: "/logos/gore.svg",
-    href: "/companies/gore",
-    externalUrl: "https://www.gore.com",
-    name: "W.L. Gore & Associates",
-    description:
-      "W.L. Gore & Associates is a global materials science company renowned for its innovative fluoropolymer solutions, including GORE-TEX® fabrics, vascular grafts, and advanced electronic interconnect products.",
-    industries: ["Medical", "Aerospace", "Defense", "Electronics", "Industrial"],
-    products: ["Cable & Interconnect Assemblies", "Vascular Grafts", "Filtration Products", "Sealants"],
-    accent: "from-blue-50 to-blue-100",
-    border: "border-blue-200",
-    dot: "bg-blue-500",
-    iconBg: "bg-blue-100",
-    iconColor: "text-blue-600",
-  },
-  {
-    key: "tsubaki",
-    logo: "/logos/tsubaki.svg",
-    href: "/companies/tsubaki",
-    externalUrl: "https://www.kabelschlepp.com",
-    name: "Tsubaki Kabelschlepp",
-    description:
-      "Tsubaki Kabelschlepp is a world leader in energy chain systems and cable management solutions, providing robust cable carriers, drag chains, and triflex® systems for dynamic applications in automation and machinery.",
-    industries: ["Automation", "Machine Tools", "Robotics", "Semiconductor", "Medical"],
-    products: ["Energy Chains", "Cable Carriers", "Triflex® Systems", "Steel Carriers"],
-    accent: "from-orange-50 to-orange-100",
-    border: "border-orange-200",
-    dot: "bg-orange-500",
-    iconBg: "bg-orange-100",
-    iconColor: "text-orange-600",
-  },
-  {
-    key: "jae",
-    logo: "/logos/jae.svg",
-    href: "/companies/jae",
-    externalUrl: "https://www.jae.com/en",
-    name: "JAE — Japan Aviation Electronics",
-    description:
-      "JAE (Japan Aviation Electronics Industry) is a premier manufacturer of high-precision connectors and electronic components, delivering reliable connectivity solutions for aerospace, automotive, and industrial applications.",
-    industries: ["Aerospace", "Automotive", "Consumer Electronics", "Industrial", "Medical"],
-    products: ["Board-to-Board Connectors", "FPC Connectors", "Circular Connectors", "Coaxial Connectors"],
-    accent: "from-slate-50 to-slate-100",
-    border: "border-slate-200",
-    dot: "bg-slate-500",
-    iconBg: "bg-slate-100",
-    iconColor: "text-slate-600",
-  },
-];
-
 function CompaniesContent() {
-  const t = useTranslations("companies");
+  const t = useTranslations();
+  const companies = COMPANY_CONFIG.map((config) => ({
+    ...config,
+    name: t(`${config.key}.name`),
+    description: t(`${config.key}.description`),
+    industries: t(`${config.key}.industries`).split(", "),
+    products: t(`${config.key}.products`).split(", "),
+  }));
 
   return (
     <>
@@ -109,30 +104,49 @@ function CompaniesContent() {
             <Building2 className="w-4 h-4 shrink-0" />
             <span>RSTECH Electronics</span>
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">{t("title")}</h1>
-          <p className="text-slate-400 text-lg max-w-2xl">{t("subtitle")}</p>
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">{t("companies.title")}</h1>
+          <p className="text-slate-400 text-lg max-w-2xl">{t("companies.subtitle")}</p>
         </div>
       </div>
 
       {/* Company cards */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <StaggerGrid className="space-y-10">
-          {COMPANIES.map(({ key, href, logo, externalUrl, name, description, industries, products, accent, border, dot }) => (
+          {companies.map(({ key, href, logo, externalUrl, name, description, industries, products, accent, border, dot, backgroundImage }) => (
             <StaggerCard key={key}>
-              <div className={`bg-gradient-to-br ${accent} border ${border} rounded-2xl p-8 lg:p-10`}>
+              <div className={`relative border ${border} rounded-2xl p-8 lg:p-10 overflow-hidden`}>
+                {backgroundImage && (
+                  <>
+                    <div
+                      className="absolute inset-0 rounded-2xl"
+                      style={{
+                        backgroundImage: `url(${backgroundImage})`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                      }}
+                    />
+                    <div className="absolute inset-0 bg-black/55 rounded-2xl" />
+                  </>
+                )}
+                {!backgroundImage && (
+                  <div className={`absolute inset-0 bg-gradient-to-br ${accent} rounded-2xl`} />
+                )}
+
+                {/* Content */}
+                <div className="relative z-10">
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                   {/* Left: info */}
                   <div className="lg:col-span-2">
                     <div className="h-10 mb-5">
                       <Image src={logo} alt={name} width={180} height={40} className="h-9 w-auto object-contain" />
                     </div>
-                    <h2 className="text-2xl font-bold text-[#1a202c] mb-3">{name}</h2>
-                    <p className="text-[#4a5568] leading-relaxed mb-6">{description}</p>
+                    <h2 className="text-2xl font-bold text-white mb-3">{name}</h2>
+                    <p className="text-gray-100 leading-relaxed mb-6">{description}</p>
                     <div className="flex flex-wrap gap-2 mb-6">
                       {industries.map((ind) => (
                         <span
                           key={ind}
-                          className="text-xs font-medium text-[#334155] bg-white/70 border border-[#e2e8f0] px-2.5 py-1 rounded-full"
+                          className="text-xs font-medium text-slate-900 bg-white/90 border border-white/50 px-2.5 py-1 rounded-full"
                         >
                           {ind}
                         </span>
@@ -172,6 +186,7 @@ function CompaniesContent() {
                       ))}
                     </ul>
                   </div>
+                </div>
                 </div>
               </div>
             </StaggerCard>

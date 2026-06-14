@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import Header from "@/components/Header";
@@ -84,6 +85,7 @@ const INDUSTRIES = [
 ];
 
 function JaeContent({ locale }: { locale: string }) {
+  const t = useTranslations();
   return (
     <>
       {/* Hero */}
@@ -102,7 +104,7 @@ function JaeContent({ locale }: { locale: string }) {
             className="inline-flex items-center gap-2 text-slate-400 hover:text-white text-sm mb-8 transition-colors cursor-pointer"
           >
             <ArrowLeft className="w-4 h-4" />
-            All Companies
+            {t("nav.companies")}
           </Link>
           <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-8 mb-8">
             {/* Logo Section */}
@@ -121,13 +123,13 @@ function JaeContent({ locale }: { locale: string }) {
             <div className="flex-1">
               <div className="inline-flex items-center gap-2 bg-slate-500/20 border border-slate-500/40 text-slate-300 text-sm font-medium px-4 py-1.5 rounded-full mb-6">
                 <ShieldCheck className="w-4 h-4 shrink-0" />
-                <span>Authorized Israeli Representative</span>
+                <span>{t("jae.tagline")}</span>
               </div>
               <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-                JAE — Japan Aviation Electronics
+                {t("jae.name")}
               </h1>
               <p className="text-slate-300 text-lg max-w-2xl">
-                Connecting the world with precision — high-reliability connectors for critical applications.
+                {t("jae.description")}
               </p>
             </div>
           </div>
