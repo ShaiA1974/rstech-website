@@ -33,10 +33,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export async function generateStaticParams() {
-  return articles.map((article) => ({
-    slug: article.slug,
-    locale: "en",
-  }));
+  return articles.flatMap((article) => [
+    {
+      slug: article.slug,
+      locale: "en",
+    },
+    {
+      slug: article.slug,
+      locale: "he",
+    },
+  ]);
 }
 
 export default async function ArticlePage({ params }: Props) {
