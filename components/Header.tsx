@@ -173,6 +173,9 @@ export default function Header({ locale }: { locale: string }) {
               )}
             </div>
 
+            <Link href="/knowledge-base" className={navClass("/knowledge-base")}>
+              {t("knowledgeBase")}
+            </Link>
             <Link href="/about" className={navClass("/about")}>
               {t("about")}
             </Link>
@@ -276,6 +279,13 @@ export default function Header({ locale }: { locale: string }) {
               )}
             </div>
 
+            <Link
+              href="/knowledge-base"
+              className="text-sm font-medium text-[#4a5568] hover:text-[#CC1C1C] px-2 py-2 rounded-lg hover:bg-red-50 transition-colors"
+              onClick={() => setMenuOpen(false)}
+            >
+              {t("knowledgeBase")}
+            </Link>
             <Link
               href="/about"
               className="text-sm font-medium text-[#4a5568] hover:text-[#CC1C1C] px-2 py-2 rounded-lg hover:bg-red-50 transition-colors"
