@@ -39,6 +39,12 @@ interface ArticleSubsection {
   title: string;
   content?: string[];
   items?: string[];
+  box?: {
+    type: "info" | "warning" | "success" | "tip";
+    title?: string;
+    items?: string[];
+    content?: string;
+  };
 }
 
 interface ChecklistItem {

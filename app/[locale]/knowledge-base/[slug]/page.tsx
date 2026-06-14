@@ -223,7 +223,7 @@ function ArticleContent({
                 )}
 
                 {section.subsections && section.subsections.map((subsection, subIdx) => (
-                  <div key={subIdx}>
+                  <div key={subIdx} className="mb-10">
                     <h3 className="text-2xl font-bold text-[#1a202c] mb-4">{subsection.title}</h3>
                     {subsection.content && subsection.content.map((para, pIdx) => (
                       <p key={pIdx} className="text-[#4a5568] leading-relaxed mb-4">
@@ -236,6 +236,24 @@ function ArticleContent({
                           <li key={iIdx}><strong>{item.split(" - ")[0]}</strong> - {item.split(" - ")[1] || ""}</li>
                         ))}
                       </ul>
+                    )}
+                    {subsection.box && (
+                      <div className={`rounded-lg p-4 mb-6 border ${
+                        subsection.box.type === "info" ? "bg-blue-50 border-blue-200" :
+                        subsection.box.type === "warning" ? "bg-red-50 border-red-200" :
+                        subsection.box.type === "success" ? "bg-green-50 border-green-200" :
+                        "bg-orange-50 border-orange-200"
+                      }`}>
+                        {subsection.box.title && <h4 className="font-semibold text-[#1a202c] mb-2">{subsection.box.title}</h4>}
+                        {subsection.box.items && (
+                          <ul className="space-y-1 text-[#4a5568] text-sm">
+                            {subsection.box.items.map((item, iIdx) => (
+                              <li key={iIdx}>• {item}</li>
+                            ))}
+                          </ul>
+                        )}
+                        {subsection.box.content && <p className="text-[#4a5568]">{subsection.box.content}</p>}
+                      </div>
                     )}
                   </div>
                 ))}
