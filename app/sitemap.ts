@@ -4,6 +4,7 @@ import { TSUBAKI_PRODUCTS } from "@/data/tsubaki-products";
 import { TSUBAKI_CARRIERS } from "@/data/tsubaki-carriers";
 import { TSUBAKI_CABLES, CABLE_CATEGORIES } from "@/data/tsubaki-cables";
 import { JAE_PRODUCTS } from "@/data/jae-products";
+import { articles } from "@/data/articles";
 
 const BASE = "https://rstech.co.il";
 const LOCALES = ["en", "he"];
@@ -44,6 +45,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     urls(`/companies/gore/parts/${encodeURIComponent(partNumber)}`, 0.8, "monthly")
   );
 
+  const articleUrls = articles.flatMap((article) =>
+    urls(`/knowledge-base/${article.slug}`, 0.85, "monthly")
+  );
+
   return [
     ...urls("", 1.0, "monthly"),
     ...urls("/companies", 0.9, "monthly"),
@@ -63,6 +68,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...urls("/companies/jae", 0.85, "monthly"),
     ...urls("/companies/jae/products", 0.85, "weekly"),
     ...jaeProductUrls,
+    ...urls("/knowledge-base", 0.8, "weekly"),
+    ...articleUrls,
     ...urls("/about", 0.8, "yearly"),
     ...urls("/contact", 0.8, "yearly"),
   ];
