@@ -19,11 +19,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: "PHASEFLEX® Ruggedized Test Assemblies — Gore via RSTECH Electronics Israel",
     description: "Gore PHASEFLEX® test cable assemblies: best-in-class phase stability, DC to 110 GHz, rated for millions of flex cycles. Authorized distributor in Israel — RSTECH Electronics.",
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/companies/gore/products/rf-phaseflex`,
+      canonical: `https://www.rstech.co.il/${locale}/companies/gore/products/rf-phaseflex`,
       languages: {
-        en: `https://rstech.co.il/en/companies/gore/products/rf-phaseflex`,
-        he: `https://rstech.co.il/he/companies/gore/products/rf-phaseflex`,
-        "x-default": `https://rstech.co.il/en/companies/gore/products/rf-phaseflex`,
+        en: `https://www.rstech.co.il/en/companies/gore/products/rf-phaseflex`,
+        he: `https://www.rstech.co.il/he/companies/gore/products/rf-phaseflex`,
+        "x-default": `https://www.rstech.co.il/en/companies/gore/products/rf-phaseflex`,
       },
     },
   };

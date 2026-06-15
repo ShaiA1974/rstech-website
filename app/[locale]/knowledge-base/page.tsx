@@ -22,11 +22,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       ? "מדריכים טכניים על בחירת נושאי כבלים, מחברים דיוק וחיבורים תעשייתיים. נכתב על ידי RSTECH אלקטרוניקה — נציג Tsubaki Kabelschlepp, W.L. Gore ו-JAE בישראל."
       : "Technical guides on cable carrier selection, precision connectors, and industrial interconnects. Written for engineers by RSTECH Electronics — authorized representative of Tsubaki Kabelschlepp, W.L. Gore, and JAE in Israel.",
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/knowledge-base`,
+      canonical: `https://www.rstech.co.il/${locale}/knowledge-base`,
       languages: {
-        en: "https://rstech.co.il/en/knowledge-base",
-        he: "https://rstech.co.il/he/knowledge-base",
-        "x-default": "https://rstech.co.il/en/knowledge-base",
+        en: "https://www.rstech.co.il/en/knowledge-base",
+        he: "https://www.rstech.co.il/he/knowledge-base",
+        "x-default": "https://www.rstech.co.il/en/knowledge-base",
       },
     },
     openGraph: {
@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: isHe
         ? "מדריכים טכניים על בחירת נושאי כבלים ומחברים"
         : "Technical guides on cable carriers and industrial interconnects",
-      url: `https://rstech.co.il/${locale}/knowledge-base`,
+      url: `https://www.rstech.co.il/${locale}/knowledge-base`,
       type: "website",
     },
   };

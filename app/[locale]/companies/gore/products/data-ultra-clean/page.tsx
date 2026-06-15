@@ -19,11 +19,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: "Ultra-Clean Round Cables — Gore Cables via RSTECH Electronics Israel",
     description: "Gore ultra-clean cables engineered for semiconductor and medical cleanrooms. Minimal outgassing, strict cleanliness standards. Authorized distributor in Israel — RSTECH Electronics.",
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/companies/gore/products/data-ultra-clean`,
+      canonical: `https://www.rstech.co.il/${locale}/companies/gore/products/data-ultra-clean`,
       languages: {
-        en: `https://rstech.co.il/en/companies/gore/products/data-ultra-clean`,
-        he: `https://rstech.co.il/he/companies/gore/products/data-ultra-clean`,
-        "x-default": `https://rstech.co.il/en/companies/gore/products/data-ultra-clean`,
+        en: `https://www.rstech.co.il/en/companies/gore/products/data-ultra-clean`,
+        he: `https://www.rstech.co.il/he/companies/gore/products/data-ultra-clean`,
+        "x-default": `https://www.rstech.co.il/en/companies/gore/products/data-ultra-clean`,
       },
     },
   };

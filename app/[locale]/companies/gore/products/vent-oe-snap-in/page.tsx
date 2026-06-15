@@ -21,11 +21,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: "Snap-In Outdoor Electronics Vents — Gore Vents via RSTECH Electronics Israel",
     description: "Gore snap-in ePTFE vents for high-volume telecom cabinet, smart meter & outdoor lighting assembly. IP68 rated, tool-free installation, automated-line compatible. RSTECH Electronics Israel. Part numbers: PMF100271, PMF200125, PMF200128, PMF200484, PMF200521.",
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/companies/gore/products/vent-oe-snap-in`,
+      canonical: `https://www.rstech.co.il/${locale}/companies/gore/products/vent-oe-snap-in`,
       languages: {
-        en: `https://rstech.co.il/en/companies/gore/products/vent-oe-snap-in`,
-        he: `https://rstech.co.il/he/companies/gore/products/vent-oe-snap-in`,
-        "x-default": `https://rstech.co.il/en/companies/gore/products/vent-oe-snap-in`,
+        en: `https://www.rstech.co.il/en/companies/gore/products/vent-oe-snap-in`,
+        he: `https://www.rstech.co.il/he/companies/gore/products/vent-oe-snap-in`,
+        "x-default": `https://www.rstech.co.il/en/companies/gore/products/vent-oe-snap-in`,
       },
     },
   };
@@ -100,7 +100,7 @@ export default async function Page({ params }: Props) {
   return (
     <>
       <Header locale={locale} />
-        <GoreProductSchema id="vent-oe-snap-in" url={"https://rstech.co.il/en/companies/gore/products/vent-oe-snap-in"} />
+        <GoreProductSchema id="vent-oe-snap-in" url={"https://www.rstech.co.il/en/companies/gore/products/vent-oe-snap-in"} />
       <main className="flex-1">
         {/* Hero */}
         <div className="relative bg-[#0F172A] overflow-hidden">

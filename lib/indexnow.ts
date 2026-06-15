@@ -3,7 +3,7 @@
  * Submits to Bing, Yandex, and Naver via IndexNow protocol
  */
 
-const SITE_URL = "https://rstech.co.il";
+const SITE_URL = "https://www.rstech.co.il";
 const INDEXNOW_ENDPOINT = `${SITE_URL}/api/indexnow`;
 
 interface SubmitOptions {

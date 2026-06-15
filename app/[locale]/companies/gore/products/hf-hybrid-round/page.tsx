@@ -20,11 +20,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description:
       "Gore Hybrid Round Cables combine power, signal, and data in a single lightweight assembly for cobots and AGVs. Authorized Gore distributor in Israel — RSTECH Electronics.",
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/companies/gore/products/hf-hybrid-round`,
+      canonical: `https://www.rstech.co.il/${locale}/companies/gore/products/hf-hybrid-round`,
       languages: {
-        en: "https://rstech.co.il/en/companies/gore/products/hf-hybrid-round",
-        he: "https://rstech.co.il/he/companies/gore/products/hf-hybrid-round",
-        "x-default": "https://rstech.co.il/en/companies/gore/products/hf-hybrid-round",
+        en: "https://www.rstech.co.il/en/companies/gore/products/hf-hybrid-round",
+        he: "https://www.rstech.co.il/he/companies/gore/products/hf-hybrid-round",
+        "x-default": "https://www.rstech.co.il/en/companies/gore/products/hf-hybrid-round",
       },
     },
   };

@@ -19,11 +19,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: "ASW Space Wire Cables — Gore via RSTECH Electronics Israel",
     description: "Gore ASW-series space-rated cables: radiation-resistant ePTFE insulation, ECSS-compliant low outgassing, extreme thermal cycling. Authorized Gore distributor in Israel — RSTECH Electronics.",
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/companies/gore/products/space-asw`,
+      canonical: `https://www.rstech.co.il/${locale}/companies/gore/products/space-asw`,
       languages: {
-        en: `https://rstech.co.il/en/companies/gore/products/space-asw`,
-        he: `https://rstech.co.il/he/companies/gore/products/space-asw`,
-        "x-default": `https://rstech.co.il/en/companies/gore/products/space-asw`,
+        en: `https://www.rstech.co.il/en/companies/gore/products/space-asw`,
+        he: `https://www.rstech.co.il/he/companies/gore/products/space-asw`,
+        "x-default": `https://www.rstech.co.il/en/companies/gore/products/space-asw`,
       },
     },
   };

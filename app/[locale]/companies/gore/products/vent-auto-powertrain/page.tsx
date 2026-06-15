@@ -22,11 +22,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description:
       "Gore ePTFE vents for transmissions, axles, and e-drivetrains. Oil-resistant, up to +150°C continuous, snap-in and tube-mount options. Authorized in Israel — RSTECH Electronics. Part numbers: VE2148 (Direct-Fit), VE2048 (Tube-Mount).",
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/companies/gore/products/vent-auto-powertrain`,
+      canonical: `https://www.rstech.co.il/${locale}/companies/gore/products/vent-auto-powertrain`,
       languages: {
-        en: `https://rstech.co.il/en/companies/gore/products/vent-auto-powertrain`,
-        he: `https://rstech.co.il/he/companies/gore/products/vent-auto-powertrain`,
-        "x-default": `https://rstech.co.il/en/companies/gore/products/vent-auto-powertrain`,
+        en: `https://www.rstech.co.il/en/companies/gore/products/vent-auto-powertrain`,
+        he: `https://www.rstech.co.il/he/companies/gore/products/vent-auto-powertrain`,
+        "x-default": `https://www.rstech.co.il/en/companies/gore/products/vent-auto-powertrain`,
       },
     },
   };
@@ -120,7 +120,7 @@ export default async function Page({ params }: Props) {
   return (
     <>
       <Header locale={locale} />
-        <GoreProductSchema id="vent-auto-powertrain" url={"https://rstech.co.il/en/companies/gore/products/vent-auto-powertrain"} />
+        <GoreProductSchema id="vent-auto-powertrain" url={"https://www.rstech.co.il/en/companies/gore/products/vent-auto-powertrain"} />
       <main className="flex-1">
         {/* Hero */}
         <div className="relative bg-[#0F172A] overflow-hidden">

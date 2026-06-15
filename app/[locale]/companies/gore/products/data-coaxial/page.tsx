@@ -19,11 +19,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: "Coaxial Cables — Gore Cables via RSTECH Electronics Israel",
     description: "Gore high-performance coaxial cables with stable impedance and low loss across wide temperature ranges. For RF, test, aerospace & telecom. Distributed by RSTECH Israel.",
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/companies/gore/products/data-coaxial`,
+      canonical: `https://www.rstech.co.il/${locale}/companies/gore/products/data-coaxial`,
       languages: {
-        en: `https://rstech.co.il/en/companies/gore/products/data-coaxial`,
-        he: `https://rstech.co.il/he/companies/gore/products/data-coaxial`,
-        "x-default": `https://rstech.co.il/en/companies/gore/products/data-coaxial`,
+        en: `https://www.rstech.co.il/en/companies/gore/products/data-coaxial`,
+        he: `https://www.rstech.co.il/he/companies/gore/products/data-coaxial`,
+        "x-default": `https://www.rstech.co.il/en/companies/gore/products/data-coaxial`,
       },
     },
   };

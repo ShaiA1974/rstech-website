@@ -21,11 +21,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: "Portable Electronic Pressure Vents — Gore Vents via RSTECH Electronics Israel | PE80205, PE80306, PE80510, PE152.04.2",
     description: "Gore ePTFE pressure equalization membranes for altitude sensors, barometers & environmental sensors in consumer and medical portable devices. Authorized distributor in Israel — RSTECH Electronics. Part numbers: PE80205, PE30205, PE80306, PE70306, PE80510, PE70510, PE152.04.2 and more.",
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/companies/gore/products/vent-pe-pressure`,
+      canonical: `https://www.rstech.co.il/${locale}/companies/gore/products/vent-pe-pressure`,
       languages: {
-        en: `https://rstech.co.il/en/companies/gore/products/vent-pe-pressure`,
-        he: `https://rstech.co.il/he/companies/gore/products/vent-pe-pressure`,
-        "x-default": `https://rstech.co.il/en/companies/gore/products/vent-pe-pressure`,
+        en: `https://www.rstech.co.il/en/companies/gore/products/vent-pe-pressure`,
+        he: `https://www.rstech.co.il/he/companies/gore/products/vent-pe-pressure`,
+        "x-default": `https://www.rstech.co.il/en/companies/gore/products/vent-pe-pressure`,
       },
     },
   };
@@ -100,7 +100,7 @@ export default async function Page({ params }: Props) {
   return (
     <>
       <Header locale={locale} />
-        <GoreProductSchema id="vent-pe-pressure" url={"https://rstech.co.il/en/companies/gore/products/vent-pe-pressure"} />
+        <GoreProductSchema id="vent-pe-pressure" url={"https://www.rstech.co.il/en/companies/gore/products/vent-pe-pressure"} />
       <main className="flex-1">
         {/* Hero */}
         <div className="relative bg-[#0F172A] overflow-hidden">

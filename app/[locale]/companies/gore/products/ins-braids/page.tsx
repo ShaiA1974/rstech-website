@@ -20,11 +20,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description:
       "Gore ePTFE protective braids for lightweight EMI shielding and mechanical protection while maintaining cable flexibility. Authorized Gore distributor — RSTECH Electronics Israel.",
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/companies/gore/products/ins-braids`,
+      canonical: `https://www.rstech.co.il/${locale}/companies/gore/products/ins-braids`,
       languages: {
-        en: "https://rstech.co.il/en/companies/gore/products/ins-braids",
-        he: "https://rstech.co.il/he/companies/gore/products/ins-braids",
-        "x-default": "https://rstech.co.il/en/companies/gore/products/ins-braids",
+        en: "https://www.rstech.co.il/en/companies/gore/products/ins-braids",
+        he: "https://www.rstech.co.il/he/companies/gore/products/ins-braids",
+        "x-default": "https://www.rstech.co.il/en/companies/gore/products/ins-braids",
       },
     },
   };

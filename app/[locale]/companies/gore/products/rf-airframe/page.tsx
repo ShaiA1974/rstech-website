@@ -19,11 +19,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: "Ruggedized Airframe RF Assemblies — Gore via RSTECH Electronics Israel",
     description: "Gore Ruggedized Airframe RF Assemblies: MIL-SPEC rated, vibration & shock resistant, extreme temperature range for military and commercial aircraft. Authorized in Israel — RSTECH Electronics.",
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/companies/gore/products/rf-airframe`,
+      canonical: `https://www.rstech.co.il/${locale}/companies/gore/products/rf-airframe`,
       languages: {
-        en: `https://rstech.co.il/en/companies/gore/products/rf-airframe`,
-        he: `https://rstech.co.il/he/companies/gore/products/rf-airframe`,
-        "x-default": `https://rstech.co.il/en/companies/gore/products/rf-airframe`,
+        en: `https://www.rstech.co.il/en/companies/gore/products/rf-airframe`,
+        he: `https://www.rstech.co.il/he/companies/gore/products/rf-airframe`,
+        "x-default": `https://www.rstech.co.il/en/companies/gore/products/rf-airframe`,
       },
     },
   };

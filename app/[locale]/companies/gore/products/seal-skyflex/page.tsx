@@ -20,11 +20,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description:
       "Non-curing ePTFE sealant tapes and gaskets for aircraft panels, cowlings, and fairings. Approved by Airbus, Boeing, Bombardier, COMAC, Embraer. Authorized in Israel — RSTECH Electronics.",
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/companies/gore/products/seal-skyflex`,
+      canonical: `https://www.rstech.co.il/${locale}/companies/gore/products/seal-skyflex`,
       languages: {
-        en: `https://rstech.co.il/en/companies/gore/products/seal-skyflex`,
-        he: `https://rstech.co.il/he/companies/gore/products/seal-skyflex`,
-        "x-default": `https://rstech.co.il/en/companies/gore/products/seal-skyflex`,
+        en: `https://www.rstech.co.il/en/companies/gore/products/seal-skyflex`,
+        he: `https://www.rstech.co.il/he/companies/gore/products/seal-skyflex`,
+        "x-default": `https://www.rstech.co.il/en/companies/gore/products/seal-skyflex`,
       },
     },
   };

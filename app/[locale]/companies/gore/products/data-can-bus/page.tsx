@@ -19,11 +19,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: "CAN Bus Cables — Gore Cables via RSTECH Electronics Israel",
     description: "Gore CAN Bus Cables for automotive and industrial networking. Lightweight, EMI-shielded, mechanically robust. Authorized distributor in Israel — RSTECH Electronics.",
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/companies/gore/products/data-can-bus`,
+      canonical: `https://www.rstech.co.il/${locale}/companies/gore/products/data-can-bus`,
       languages: {
-        en: `https://rstech.co.il/en/companies/gore/products/data-can-bus`,
-        he: `https://rstech.co.il/he/companies/gore/products/data-can-bus`,
-        "x-default": `https://rstech.co.il/en/companies/gore/products/data-can-bus`,
+        en: `https://www.rstech.co.il/en/companies/gore/products/data-can-bus`,
+        he: `https://www.rstech.co.il/he/companies/gore/products/data-can-bus`,
+        "x-default": `https://www.rstech.co.il/en/companies/gore/products/data-can-bus`,
       },
     },
   };

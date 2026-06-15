@@ -64,11 +64,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `${carrier.name} — Tsubaki Kabelschlepp Cable Carriers via RSTECH Electronics Israel`,
     description: carrier.description,
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/companies/tsubaki/carriers/${carrierId}`,
+      canonical: `https://www.rstech.co.il/${locale}/companies/tsubaki/carriers/${carrierId}`,
       languages: {
-        en: `https://rstech.co.il/en/companies/tsubaki/carriers/${carrierId}`,
-        he: `https://rstech.co.il/he/companies/tsubaki/carriers/${carrierId}`,
-        "x-default": `https://rstech.co.il/en/companies/tsubaki/carriers/${carrierId}`,
+        en: `https://www.rstech.co.il/en/companies/tsubaki/carriers/${carrierId}`,
+        he: `https://www.rstech.co.il/he/companies/tsubaki/carriers/${carrierId}`,
+        "x-default": `https://www.rstech.co.il/en/companies/tsubaki/carriers/${carrierId}`,
       },
     },
   };

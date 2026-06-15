@@ -21,11 +21,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: "MEMs Protective Vents — Gore Vents via RSTECH Electronics Israel | VP1001MPX, VP0002MPN, VP0001MWN",
     description: "Gore ePTFE protective vent membranes for MEMS pressure & microphone sensors. Sub-1µm particle filtration, high acoustic transparency, adhesive or reel format. RSTECH Electronics Israel. Part numbers: VP1001MPX (Style 100), VP0002MPN (Style 200), VP0001MWN (Style 300).",
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/companies/gore/products/vent-pe-mems`,
+      canonical: `https://www.rstech.co.il/${locale}/companies/gore/products/vent-pe-mems`,
       languages: {
-        en: `https://rstech.co.il/en/companies/gore/products/vent-pe-mems`,
-        he: `https://rstech.co.il/he/companies/gore/products/vent-pe-mems`,
-        "x-default": `https://rstech.co.il/en/companies/gore/products/vent-pe-mems`,
+        en: `https://www.rstech.co.il/en/companies/gore/products/vent-pe-mems`,
+        he: `https://www.rstech.co.il/he/companies/gore/products/vent-pe-mems`,
+        "x-default": `https://www.rstech.co.il/en/companies/gore/products/vent-pe-mems`,
       },
     },
   };
@@ -100,7 +100,7 @@ export default async function Page({ params }: Props) {
   return (
     <>
       <Header locale={locale} />
-        <GoreProductSchema id="vent-pe-mems" url={"https://rstech.co.il/en/companies/gore/products/vent-pe-mems"} />
+        <GoreProductSchema id="vent-pe-mems" url={"https://www.rstech.co.il/en/companies/gore/products/vent-pe-mems"} />
       <main className="flex-1">
         {/* Hero */}
         <div className="relative bg-[#0F172A] overflow-hidden">

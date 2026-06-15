@@ -17,17 +17,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description:
       "RSTECH Electronics is the authorized Israeli representative of W.L. Gore & Associates. Cables, interconnects, filtration, medical devices, and more.",
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/companies/gore`,
-      languages: { en: "https://rstech.co.il/en/companies/gore", he: "https://rstech.co.il/he/companies/gore", "x-default": "https://rstech.co.il/en/companies/gore" },
+      canonical: `https://www.rstech.co.il/${locale}/companies/gore`,
+      languages: { en: "https://www.rstech.co.il/en/companies/gore", he: "https://www.rstech.co.il/he/companies/gore", "x-default": "https://www.rstech.co.il/en/companies/gore" },
     },
     openGraph: {
       title: "W.L. Gore & Associates",
       description: "High-performance cables, interconnects, and filtration solutions for demanding applications",
-      url: `https://rstech.co.il/${locale}/companies/gore`,
+      url: `https://www.rstech.co.il/${locale}/companies/gore`,
       type: "website",
       images: [
         {
-          url: "https://rstech.co.il/products/gore/cables-ethernet.jpg",
+          url: "https://www.rstech.co.il/products/gore/cables-ethernet.jpg",
           width: 1200,
           height: 630,
           alt: "W.L. Gore cables and interconnects",

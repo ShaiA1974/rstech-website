@@ -19,11 +19,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: "Vapor Sealed RF Assemblies — Gore via RSTECH Electronics Israel",
     description: "Gore Vapor Sealed RF Assemblies with ePTFE moisture barrier for airborne radar, EW, and outdoor infrastructure. Hermetic seal, corrosion resistant. Authorized in Israel — RSTECH.",
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/companies/gore/products/rf-vapor-sealed`,
+      canonical: `https://www.rstech.co.il/${locale}/companies/gore/products/rf-vapor-sealed`,
       languages: {
-        en: `https://rstech.co.il/en/companies/gore/products/rf-vapor-sealed`,
-        he: `https://rstech.co.il/he/companies/gore/products/rf-vapor-sealed`,
-        "x-default": `https://rstech.co.il/en/companies/gore/products/rf-vapor-sealed`,
+        en: `https://www.rstech.co.il/en/companies/gore/products/rf-vapor-sealed`,
+        he: `https://www.rstech.co.il/he/companies/gore/products/rf-vapor-sealed`,
+        "x-default": `https://www.rstech.co.il/en/companies/gore/products/rf-vapor-sealed`,
       },
     },
   };

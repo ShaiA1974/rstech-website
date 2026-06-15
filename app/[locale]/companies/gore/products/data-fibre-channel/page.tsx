@@ -19,11 +19,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: "Fibre Channel Cables — Gore Cables via RSTECH Electronics Israel",
     description: "Gore Fibre Channel cables for SANs and high-speed storage networks. Extreme reliability, low latency, high bandwidth. Authorized distributor in Israel — RSTECH Electronics.",
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/companies/gore/products/data-fibre-channel`,
+      canonical: `https://www.rstech.co.il/${locale}/companies/gore/products/data-fibre-channel`,
       languages: {
-        en: `https://rstech.co.il/en/companies/gore/products/data-fibre-channel`,
-        he: `https://rstech.co.il/he/companies/gore/products/data-fibre-channel`,
-        "x-default": `https://rstech.co.il/en/companies/gore/products/data-fibre-channel`,
+        en: `https://www.rstech.co.il/en/companies/gore/products/data-fibre-channel`,
+        he: `https://www.rstech.co.il/he/companies/gore/products/data-fibre-channel`,
+        "x-default": `https://www.rstech.co.il/en/companies/gore/products/data-fibre-channel`,
       },
     },
   };

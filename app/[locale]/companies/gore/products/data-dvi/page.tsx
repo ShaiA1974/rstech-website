@@ -19,11 +19,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: "DVI Cables — Gore Cables via RSTECH Electronics Israel",
     description: "Gore ultra-flexible DVI cables for medical imaging and simulation. Signal integrity at lengths where standard cables fail. Authorized distributor in Israel — RSTECH Electronics.",
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/companies/gore/products/data-dvi`,
+      canonical: `https://www.rstech.co.il/${locale}/companies/gore/products/data-dvi`,
       languages: {
-        en: `https://rstech.co.il/en/companies/gore/products/data-dvi`,
-        he: `https://rstech.co.il/he/companies/gore/products/data-dvi`,
-        "x-default": `https://rstech.co.il/en/companies/gore/products/data-dvi`,
+        en: `https://www.rstech.co.il/en/companies/gore/products/data-dvi`,
+        he: `https://www.rstech.co.il/he/companies/gore/products/data-dvi`,
+        "x-default": `https://www.rstech.co.il/en/companies/gore/products/data-dvi`,
       },
     },
   };

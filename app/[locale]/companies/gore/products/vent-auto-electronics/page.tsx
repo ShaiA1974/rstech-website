@@ -22,11 +22,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description:
       "Gore ePTFE vents for ECUs, inverters, sensors, and automotive electronics housings. IP6K9K, −40°C to +160°C, multiple mounting styles. Authorized in Israel — RSTECH Electronics. Key part numbers: AMF301190, AMF301191, AMF300114, AMF300070, AMF300200.",
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/companies/gore/products/vent-auto-electronics`,
+      canonical: `https://www.rstech.co.il/${locale}/companies/gore/products/vent-auto-electronics`,
       languages: {
-        en: `https://rstech.co.il/en/companies/gore/products/vent-auto-electronics`,
-        he: `https://rstech.co.il/he/companies/gore/products/vent-auto-electronics`,
-        "x-default": `https://rstech.co.il/en/companies/gore/products/vent-auto-electronics`,
+        en: `https://www.rstech.co.il/en/companies/gore/products/vent-auto-electronics`,
+        he: `https://www.rstech.co.il/he/companies/gore/products/vent-auto-electronics`,
+        "x-default": `https://www.rstech.co.il/en/companies/gore/products/vent-auto-electronics`,
       },
     },
   };
@@ -120,7 +120,7 @@ export default async function Page({ params }: Props) {
   return (
     <>
       <Header locale={locale} />
-        <GoreProductSchema id="vent-auto-electronics" url={"https://rstech.co.il/en/companies/gore/products/vent-auto-electronics"} />
+        <GoreProductSchema id="vent-auto-electronics" url={"https://www.rstech.co.il/en/companies/gore/products/vent-auto-electronics"} />
       <main className="flex-1">
         {/* Hero */}
         <div className="relative bg-[#0F172A] overflow-hidden">

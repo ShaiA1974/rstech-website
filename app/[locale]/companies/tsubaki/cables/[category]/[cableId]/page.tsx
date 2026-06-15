@@ -41,11 +41,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `${cable.name} — Tsubaki Kabelschlepp | RSTECH Electronics Israel`,
     description: cable.description,
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/companies/tsubaki/cables/${category}/${cableId}`,
+      canonical: `https://www.rstech.co.il/${locale}/companies/tsubaki/cables/${category}/${cableId}`,
       languages: {
-        en: `https://rstech.co.il/en/companies/tsubaki/cables/${category}/${cableId}`,
-        he: `https://rstech.co.il/he/companies/tsubaki/cables/${category}/${cableId}`,
-        "x-default": `https://rstech.co.il/en/companies/tsubaki/cables/${category}/${cableId}`,
+        en: `https://www.rstech.co.il/en/companies/tsubaki/cables/${category}/${cableId}`,
+        he: `https://www.rstech.co.il/he/companies/tsubaki/cables/${category}/${cableId}`,
+        "x-default": `https://www.rstech.co.il/en/companies/tsubaki/cables/${category}/${cableId}`,
       },
     },
   };

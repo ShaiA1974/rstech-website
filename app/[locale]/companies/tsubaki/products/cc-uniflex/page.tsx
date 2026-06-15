@@ -24,11 +24,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `${product.name} — Tsubaki Kabelschlepp via RSTECH Electronics Israel`,
     description: product.description,
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/companies/tsubaki/products/cc-uniflex`,
+      canonical: `https://www.rstech.co.il/${locale}/companies/tsubaki/products/cc-uniflex`,
       languages: {
-        en: `https://rstech.co.il/en/companies/tsubaki/products/cc-uniflex`,
-        he: `https://rstech.co.il/he/companies/tsubaki/products/cc-uniflex`,
-        "x-default": `https://rstech.co.il/en/companies/tsubaki/products/cc-uniflex`,
+        en: `https://www.rstech.co.il/en/companies/tsubaki/products/cc-uniflex`,
+        he: `https://www.rstech.co.il/he/companies/tsubaki/products/cc-uniflex`,
+        "x-default": `https://www.rstech.co.il/en/companies/tsubaki/products/cc-uniflex`,
       },
     },
   };

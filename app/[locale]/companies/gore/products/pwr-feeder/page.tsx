@@ -20,11 +20,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description:
       "Gore high-current power feeder cables for weight-critical aerospace and rugged industrial platforms. Compact, reliable power delivery. Authorized Gore distributor — RSTECH Electronics Israel.",
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/companies/gore/products/pwr-feeder`,
+      canonical: `https://www.rstech.co.il/${locale}/companies/gore/products/pwr-feeder`,
       languages: {
-        en: "https://rstech.co.il/en/companies/gore/products/pwr-feeder",
-        he: "https://rstech.co.il/he/companies/gore/products/pwr-feeder",
-        "x-default": "https://rstech.co.il/en/companies/gore/products/pwr-feeder",
+        en: "https://www.rstech.co.il/en/companies/gore/products/pwr-feeder",
+        he: "https://www.rstech.co.il/he/companies/gore/products/pwr-feeder",
+        "x-default": "https://www.rstech.co.il/en/companies/gore/products/pwr-feeder",
       },
     },
   };

@@ -22,11 +22,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description:
       "Gore ePTFE vents for EV Li-Ion battery packs and BMS modules. IPX7-rated, high-volume gas release, thermal event pressure venting. Authorized distributor in Israel — RSTECH Electronics. Part numbers: AMF300114, AMF300070, AMF300200, NVA9064.",
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/companies/gore/products/vent-auto-battery`,
+      canonical: `https://www.rstech.co.il/${locale}/companies/gore/products/vent-auto-battery`,
       languages: {
-        en: `https://rstech.co.il/en/companies/gore/products/vent-auto-battery`,
-        he: `https://rstech.co.il/he/companies/gore/products/vent-auto-battery`,
-        "x-default": `https://rstech.co.il/en/companies/gore/products/vent-auto-battery`,
+        en: `https://www.rstech.co.il/en/companies/gore/products/vent-auto-battery`,
+        he: `https://www.rstech.co.il/he/companies/gore/products/vent-auto-battery`,
+        "x-default": `https://www.rstech.co.il/en/companies/gore/products/vent-auto-battery`,
       },
     },
   };
@@ -120,7 +120,7 @@ export default async function Page({ params }: Props) {
   return (
     <>
       <Header locale={locale} />
-        <GoreProductSchema id="vent-auto-battery" url={"https://rstech.co.il/en/companies/gore/products/vent-auto-battery"} />
+        <GoreProductSchema id="vent-auto-battery" url={"https://www.rstech.co.il/en/companies/gore/products/vent-auto-battery"} />
       <main className="flex-1">
         {/* Hero */}
         <div className="relative bg-[#0F172A] overflow-hidden">

@@ -19,11 +19,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: "CSWL Space Cables — Gore via RSTECH Electronics Israel",
     description: "Gore CSWL-series multi-conductor space cables combining signal and power in a single lightweight assembly for spacecraft harness simplification. Authorized in Israel — RSTECH Electronics.",
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/companies/gore/products/space-cswl`,
+      canonical: `https://www.rstech.co.il/${locale}/companies/gore/products/space-cswl`,
       languages: {
-        en: `https://rstech.co.il/en/companies/gore/products/space-cswl`,
-        he: `https://rstech.co.il/he/companies/gore/products/space-cswl`,
-        "x-default": `https://rstech.co.il/en/companies/gore/products/space-cswl`,
+        en: `https://www.rstech.co.il/en/companies/gore/products/space-cswl`,
+        he: `https://www.rstech.co.il/he/companies/gore/products/space-cswl`,
+        "x-default": `https://www.rstech.co.il/en/companies/gore/products/space-cswl`,
       },
     },
   };

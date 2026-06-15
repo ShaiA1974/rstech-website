@@ -21,11 +21,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: "Packaging Liners — Gore Vents via RSTECH Electronics Israel | 323G, 324G, 383G, CM6B, CM6C",
     description: "Gore ePTFE liner membranes for pharmaceutical, specialty chemical & food packaging. Chemically inert, FDA-compliant, custom cut to size. Authorized Gore distributor in Israel — RSTECH Electronics. Part numbers: 323G, 324G, 383G, 384G, CM6B, CM6C, CM8C.",
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/companies/gore/products/vent-pkg-liners`,
+      canonical: `https://www.rstech.co.il/${locale}/companies/gore/products/vent-pkg-liners`,
       languages: {
-        en: `https://rstech.co.il/en/companies/gore/products/vent-pkg-liners`,
-        he: `https://rstech.co.il/he/companies/gore/products/vent-pkg-liners`,
-        "x-default": `https://rstech.co.il/en/companies/gore/products/vent-pkg-liners`,
+        en: `https://www.rstech.co.il/en/companies/gore/products/vent-pkg-liners`,
+        he: `https://www.rstech.co.il/he/companies/gore/products/vent-pkg-liners`,
+        "x-default": `https://www.rstech.co.il/en/companies/gore/products/vent-pkg-liners`,
       },
     },
   };
@@ -100,7 +100,7 @@ export default async function Page({ params }: Props) {
   return (
     <>
       <Header locale={locale} />
-        <GoreProductSchema id="vent-pkg-liners" url={"https://rstech.co.il/en/companies/gore/products/vent-pkg-liners"} />
+        <GoreProductSchema id="vent-pkg-liners" url={"https://www.rstech.co.il/en/companies/gore/products/vent-pkg-liners"} />
       <main className="flex-1">
         {/* Hero */}
         <div className="relative bg-[#0F172A] overflow-hidden">

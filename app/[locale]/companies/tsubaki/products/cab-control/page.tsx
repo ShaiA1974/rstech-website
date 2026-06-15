@@ -24,11 +24,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `${product.name} — Tsubaki Kabelschlepp via RSTECH Electronics Israel`,
     description: product.description,
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/companies/tsubaki/products/cab-control`,
+      canonical: `https://www.rstech.co.il/${locale}/companies/tsubaki/products/cab-control`,
       languages: {
-        en: `https://rstech.co.il/en/companies/tsubaki/products/cab-control`,
-        he: `https://rstech.co.il/he/companies/tsubaki/products/cab-control`,
-        "x-default": `https://rstech.co.il/en/companies/tsubaki/products/cab-control`,
+        en: `https://www.rstech.co.il/en/companies/tsubaki/products/cab-control`,
+        he: `https://www.rstech.co.il/he/companies/tsubaki/products/cab-control`,
+        "x-default": `https://www.rstech.co.il/en/companies/tsubaki/products/cab-control`,
       },
     },
   };

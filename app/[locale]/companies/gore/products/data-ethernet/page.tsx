@@ -19,11 +19,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: "Ethernet Cables — Gore Cables via RSTECH Electronics Israel",
     description: "Gore Ethernet cables rated for extreme environments — 10GbE+, superior EMI shielding, fine-wire construction. For industrial, medical & aerospace. Distributed by RSTECH Israel.",
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/companies/gore/products/data-ethernet`,
+      canonical: `https://www.rstech.co.il/${locale}/companies/gore/products/data-ethernet`,
       languages: {
-        en: `https://rstech.co.il/en/companies/gore/products/data-ethernet`,
-        he: `https://rstech.co.il/he/companies/gore/products/data-ethernet`,
-        "x-default": `https://rstech.co.il/en/companies/gore/products/data-ethernet`,
+        en: `https://www.rstech.co.il/en/companies/gore/products/data-ethernet`,
+        he: `https://www.rstech.co.il/he/companies/gore/products/data-ethernet`,
+        "x-default": `https://www.rstech.co.il/en/companies/gore/products/data-ethernet`,
       },
     },
   };

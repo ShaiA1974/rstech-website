@@ -26,11 +26,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `${product.name} — Gore Products via RSTECH Electronics Israel`,
     description: product.description,
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/companies/gore/products/${productId}`,
+      canonical: `https://www.rstech.co.il/${locale}/companies/gore/products/${productId}`,
       languages: {
-        en: `https://rstech.co.il/en/companies/gore/products/${productId}`,
-        he: `https://rstech.co.il/he/companies/gore/products/${productId}`,
-        "x-default": `https://rstech.co.il/en/companies/gore/products/${productId}`,
+        en: `https://www.rstech.co.il/en/companies/gore/products/${productId}`,
+        he: `https://www.rstech.co.il/he/companies/gore/products/${productId}`,
+        "x-default": `https://www.rstech.co.il/en/companies/gore/products/${productId}`,
       },
     },
   };

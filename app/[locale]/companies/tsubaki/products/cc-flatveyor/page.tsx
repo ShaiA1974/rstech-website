@@ -24,11 +24,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `${product.name} — Tsubaki Kabelschlepp via RSTECH Electronics Israel`,
     description: product.description,
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/companies/tsubaki/products/cc-flatveyor`,
+      canonical: `https://www.rstech.co.il/${locale}/companies/tsubaki/products/cc-flatveyor`,
       languages: {
-        en: `https://rstech.co.il/en/companies/tsubaki/products/cc-flatveyor`,
-        he: `https://rstech.co.il/he/companies/tsubaki/products/cc-flatveyor`,
-        "x-default": `https://rstech.co.il/en/companies/tsubaki/products/cc-flatveyor`,
+        en: `https://www.rstech.co.il/en/companies/tsubaki/products/cc-flatveyor`,
+        he: `https://www.rstech.co.il/he/companies/tsubaki/products/cc-flatveyor`,
+        "x-default": `https://www.rstech.co.il/en/companies/tsubaki/products/cc-flatveyor`,
       },
     },
   };

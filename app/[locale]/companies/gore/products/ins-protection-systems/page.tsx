@@ -20,11 +20,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description:
       "Gore ePTFE cable protection systems guard against cut-through, chemicals, and extreme temperatures over the full cable length. Authorized Gore distributor — RSTECH Electronics Israel.",
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/companies/gore/products/ins-protection-systems`,
+      canonical: `https://www.rstech.co.il/${locale}/companies/gore/products/ins-protection-systems`,
       languages: {
-        en: "https://rstech.co.il/en/companies/gore/products/ins-protection-systems",
-        he: "https://rstech.co.il/he/companies/gore/products/ins-protection-systems",
-        "x-default": "https://rstech.co.il/en/companies/gore/products/ins-protection-systems",
+        en: "https://www.rstech.co.il/en/companies/gore/products/ins-protection-systems",
+        he: "https://www.rstech.co.il/he/companies/gore/products/ins-protection-systems",
+        "x-default": "https://www.rstech.co.il/en/companies/gore/products/ins-protection-systems",
       },
     },
   };

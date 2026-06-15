@@ -19,11 +19,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: "Quad Cables — Gore Cables via RSTECH Electronics Israel",
     description: "Gore high-density quad cables combining multiple data channels in a compact assembly for space-constrained aerospace, industrial & electronics signal routing. Distributed by RSTECH Israel.",
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/companies/gore/products/data-quad`,
+      canonical: `https://www.rstech.co.il/${locale}/companies/gore/products/data-quad`,
       languages: {
-        en: `https://rstech.co.il/en/companies/gore/products/data-quad`,
-        he: `https://rstech.co.il/he/companies/gore/products/data-quad`,
-        "x-default": `https://rstech.co.il/en/companies/gore/products/data-quad`,
+        en: `https://www.rstech.co.il/en/companies/gore/products/data-quad`,
+        he: `https://www.rstech.co.il/he/companies/gore/products/data-quad`,
+        "x-default": `https://www.rstech.co.il/en/companies/gore/products/data-quad`,
       },
     },
   };

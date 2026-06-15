@@ -19,11 +19,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: "MIL-STD-1760 Cables — Gore via RSTECH Electronics Israel",
     description: "Gore MIL-STD-1760 cables for aircraft-to-store electrical interfaces: qualified for external stores, ruggedized connectors, data and power for smart weapons. Authorized in Israel — RSTECH.",
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/companies/gore/products/spec-mil1760`,
+      canonical: `https://www.rstech.co.il/${locale}/companies/gore/products/spec-mil1760`,
       languages: {
-        en: `https://rstech.co.il/en/companies/gore/products/spec-mil1760`,
-        he: `https://rstech.co.il/he/companies/gore/products/spec-mil1760`,
-        "x-default": `https://rstech.co.il/en/companies/gore/products/spec-mil1760`,
+        en: `https://www.rstech.co.il/en/companies/gore/products/spec-mil1760`,
+        he: `https://www.rstech.co.il/he/companies/gore/products/spec-mil1760`,
+        "x-default": `https://www.rstech.co.il/en/companies/gore/products/spec-mil1760`,
       },
     },
   };

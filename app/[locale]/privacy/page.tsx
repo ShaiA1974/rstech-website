@@ -15,8 +15,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: "Privacy Policy — RSTECH Electronics",
     description: "RSTECH Electronics privacy policy. Learn how we protect your personal data and your rights under Israeli and GDPR regulations.",
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/privacy`,
-      languages: { en: "https://rstech.co.il/en/privacy", he: "https://rstech.co.il/he/privacy", "x-default": "https://rstech.co.il/en/privacy" },
+      canonical: `https://www.rstech.co.il/${locale}/privacy`,
+      languages: { en: "https://www.rstech.co.il/en/privacy", he: "https://www.rstech.co.il/he/privacy", "x-default": "https://www.rstech.co.il/en/privacy" },
     },
   };
 }

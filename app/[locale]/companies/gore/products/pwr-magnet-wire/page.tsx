@@ -20,11 +20,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description:
       "Gore-insulated magnet wire for superior thermal performance in motors, transformers, and solenoids in extreme environments. Authorized Gore distributor in Israel — RSTECH Electronics.",
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/companies/gore/products/pwr-magnet-wire`,
+      canonical: `https://www.rstech.co.il/${locale}/companies/gore/products/pwr-magnet-wire`,
       languages: {
-        en: "https://rstech.co.il/en/companies/gore/products/pwr-magnet-wire",
-        he: "https://rstech.co.il/he/companies/gore/products/pwr-magnet-wire",
-        "x-default": "https://rstech.co.il/en/companies/gore/products/pwr-magnet-wire",
+        en: "https://www.rstech.co.il/en/companies/gore/products/pwr-magnet-wire",
+        he: "https://www.rstech.co.il/he/companies/gore/products/pwr-magnet-wire",
+        "x-default": "https://www.rstech.co.il/en/companies/gore/products/pwr-magnet-wire",
       },
     },
   };

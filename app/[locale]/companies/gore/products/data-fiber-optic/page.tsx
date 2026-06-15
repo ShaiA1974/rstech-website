@@ -19,11 +19,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: "Fiber Optic Cables — Gore Cables via RSTECH Electronics Israel",
     description: "Gore ruggedized fiber optic cables with ePTFE buffer tubes. EMI immune, lightweight, designed for harsh environments where conventional fiber fails. Distributed by RSTECH Israel.",
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/companies/gore/products/data-fiber-optic`,
+      canonical: `https://www.rstech.co.il/${locale}/companies/gore/products/data-fiber-optic`,
       languages: {
-        en: `https://rstech.co.il/en/companies/gore/products/data-fiber-optic`,
-        he: `https://rstech.co.il/he/companies/gore/products/data-fiber-optic`,
-        "x-default": `https://rstech.co.il/en/companies/gore/products/data-fiber-optic`,
+        en: `https://www.rstech.co.il/en/companies/gore/products/data-fiber-optic`,
+        he: `https://www.rstech.co.il/he/companies/gore/products/data-fiber-optic`,
+        "x-default": `https://www.rstech.co.il/en/companies/gore/products/data-fiber-optic`,
       },
     },
   };

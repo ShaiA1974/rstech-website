@@ -19,11 +19,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: "Drone Cables — Gore via RSTECH Electronics Israel",
     description: "Gore Drone Cables: lightweight, ultra-flexible cables for UAVs. Weight-optimized, high flex life, UV and weather resistant. Authorized Gore distributor in Israel — RSTECH Electronics.",
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/companies/gore/products/spec-drone`,
+      canonical: `https://www.rstech.co.il/${locale}/companies/gore/products/spec-drone`,
       languages: {
-        en: `https://rstech.co.il/en/companies/gore/products/spec-drone`,
-        he: `https://rstech.co.il/he/companies/gore/products/spec-drone`,
-        "x-default": `https://rstech.co.il/en/companies/gore/products/spec-drone`,
+        en: `https://www.rstech.co.il/en/companies/gore/products/spec-drone`,
+        he: `https://www.rstech.co.il/he/companies/gore/products/spec-drone`,
+        "x-default": `https://www.rstech.co.il/en/companies/gore/products/spec-drone`,
       },
     },
   };

@@ -19,11 +19,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: "CSC Space Cables — Gore via RSTECH Electronics Israel",
     description: "Gore CSC-series lightweight coaxial space cables with phase stability and radiation tolerance for satellite RF signal distribution. Authorized Gore distributor in Israel — RSTECH Electronics.",
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/companies/gore/products/space-csc`,
+      canonical: `https://www.rstech.co.il/${locale}/companies/gore/products/space-csc`,
       languages: {
-        en: `https://rstech.co.il/en/companies/gore/products/space-csc`,
-        he: `https://rstech.co.il/he/companies/gore/products/space-csc`,
-        "x-default": `https://rstech.co.il/en/companies/gore/products/space-csc`,
+        en: `https://www.rstech.co.il/en/companies/gore/products/space-csc`,
+        he: `https://www.rstech.co.il/he/companies/gore/products/space-csc`,
+        "x-default": `https://www.rstech.co.il/en/companies/gore/products/space-csc`,
       },
     },
   };

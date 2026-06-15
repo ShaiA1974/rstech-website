@@ -21,11 +21,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: "Adhesive Outdoor Electronics Vents — Gore Vents via RSTECH Electronics Israel | VE70205, VE80205, VE90308",
     description: "Gore adhesive ePTFE vents (VE7/VE8/VE9) for outdoor telecom enclosures, junction boxes & LED luminaires. IP64–IP68 rated. Authorized distributor in Israel — RSTECH Electronics. Part numbers: VE7 series (VE70205–VE72029), VE8 series (VE80205–VE82029), VE9 series (VE90308–VE92029).",
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/companies/gore/products/vent-oe-adhesive`,
+      canonical: `https://www.rstech.co.il/${locale}/companies/gore/products/vent-oe-adhesive`,
       languages: {
-        en: `https://rstech.co.il/en/companies/gore/products/vent-oe-adhesive`,
-        he: `https://rstech.co.il/he/companies/gore/products/vent-oe-adhesive`,
-        "x-default": `https://rstech.co.il/en/companies/gore/products/vent-oe-adhesive`,
+        en: `https://www.rstech.co.il/en/companies/gore/products/vent-oe-adhesive`,
+        he: `https://www.rstech.co.il/he/companies/gore/products/vent-oe-adhesive`,
+        "x-default": `https://www.rstech.co.il/en/companies/gore/products/vent-oe-adhesive`,
       },
     },
   };
@@ -100,7 +100,7 @@ export default async function Page({ params }: Props) {
   return (
     <>
       <Header locale={locale} />
-        <GoreProductSchema id="vent-oe-adhesive" url={"https://rstech.co.il/en/companies/gore/products/vent-oe-adhesive"} />
+        <GoreProductSchema id="vent-oe-adhesive" url={"https://www.rstech.co.il/en/companies/gore/products/vent-oe-adhesive"} />
       <main className="flex-1">
         {/* Hero */}
         <div className="relative bg-[#0F172A] overflow-hidden">

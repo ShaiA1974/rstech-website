@@ -19,11 +19,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: "Spaceflight Cables — Gore via RSTECH Electronics Israel",
     description: "Gore Spaceflight Cables: flight-heritage on ISS, launch vehicles & deep-space probes. Ultra-low outgassing, gamma & radiation resistant. Authorized in Israel — RSTECH Electronics.",
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/companies/gore/products/space-spaceflight`,
+      canonical: `https://www.rstech.co.il/${locale}/companies/gore/products/space-spaceflight`,
       languages: {
-        en: `https://rstech.co.il/en/companies/gore/products/space-spaceflight`,
-        he: `https://rstech.co.il/he/companies/gore/products/space-spaceflight`,
-        "x-default": `https://rstech.co.il/en/companies/gore/products/space-spaceflight`,
+        en: `https://www.rstech.co.il/en/companies/gore/products/space-spaceflight`,
+        he: `https://www.rstech.co.il/he/companies/gore/products/space-spaceflight`,
+        "x-default": `https://www.rstech.co.il/en/companies/gore/products/space-spaceflight`,
       },
     },
   };

@@ -19,11 +19,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: "USB Cables — Gore Cables via RSTECH Electronics Israel",
     description: "Gore slim, flexible USB cables with superior flex life and signal integrity for medical devices, industrial equipment and portable electronics. Authorized distributor — RSTECH Israel.",
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/companies/gore/products/data-usb`,
+      canonical: `https://www.rstech.co.il/${locale}/companies/gore/products/data-usb`,
       languages: {
-        en: `https://rstech.co.il/en/companies/gore/products/data-usb`,
-        he: `https://rstech.co.il/he/companies/gore/products/data-usb`,
-        "x-default": `https://rstech.co.il/en/companies/gore/products/data-usb`,
+        en: `https://www.rstech.co.il/en/companies/gore/products/data-usb`,
+        he: `https://www.rstech.co.il/he/companies/gore/products/data-usb`,
+        "x-default": `https://www.rstech.co.il/en/companies/gore/products/data-usb`,
       },
     },
   };

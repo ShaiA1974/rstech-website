@@ -19,11 +19,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: "SpaceWire Cables — Gore via RSTECH Electronics Israel",
     description: "Gore SpaceWire cables: ECSS-E-50-12 compliant, 200 Mbit/s, EMI shielded for high-speed on-board spacecraft data networks. Authorized Gore distributor in Israel — RSTECH Electronics.",
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/companies/gore/products/space-spacewire`,
+      canonical: `https://www.rstech.co.il/${locale}/companies/gore/products/space-spacewire`,
       languages: {
-        en: `https://rstech.co.il/en/companies/gore/products/space-spacewire`,
-        he: `https://rstech.co.il/he/companies/gore/products/space-spacewire`,
-        "x-default": `https://rstech.co.il/en/companies/gore/products/space-spacewire`,
+        en: `https://www.rstech.co.il/en/companies/gore/products/space-spacewire`,
+        he: `https://www.rstech.co.il/he/companies/gore/products/space-spacewire`,
+        "x-default": `https://www.rstech.co.il/en/companies/gore/products/space-spacewire`,
       },
     },
   };

@@ -21,11 +21,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: "Portable Electronic Acoustic Vents — Gore Vents via RSTECH Electronics Israel | GAW111, GAW112, GAW333, GAW337",
     description: "Gore ultra-thin ePTFE acoustic vent membranes for smartphones, wearables & hearables. IP67/IP68 compliant, sub-0.3 mm thick, minimal acoustic loss. RSTECH Electronics Israel. Part numbers: GAW111, GAW112, GAW333, GAW334, GAW337, GAW342, GAW344, GAW346, GAW348, GAW350.",
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/companies/gore/products/vent-pe-acoustic`,
+      canonical: `https://www.rstech.co.il/${locale}/companies/gore/products/vent-pe-acoustic`,
       languages: {
-        en: `https://rstech.co.il/en/companies/gore/products/vent-pe-acoustic`,
-        he: `https://rstech.co.il/he/companies/gore/products/vent-pe-acoustic`,
-        "x-default": `https://rstech.co.il/en/companies/gore/products/vent-pe-acoustic`,
+        en: `https://www.rstech.co.il/en/companies/gore/products/vent-pe-acoustic`,
+        he: `https://www.rstech.co.il/he/companies/gore/products/vent-pe-acoustic`,
+        "x-default": `https://www.rstech.co.il/en/companies/gore/products/vent-pe-acoustic`,
       },
     },
   };
@@ -100,7 +100,7 @@ export default async function Page({ params }: Props) {
   return (
     <>
       <Header locale={locale} />
-        <GoreProductSchema id="vent-pe-acoustic" url={"https://rstech.co.il/en/companies/gore/products/vent-pe-acoustic"} />
+        <GoreProductSchema id="vent-pe-acoustic" url={"https://www.rstech.co.il/en/companies/gore/products/vent-pe-acoustic"} />
       <main className="flex-1">
         {/* Hero */}
         <div className="relative bg-[#0F172A] overflow-hidden">

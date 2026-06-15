@@ -24,11 +24,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `${product.name} — Tsubaki Kabelschlepp via RSTECH Electronics Israel`,
     description: product.description,
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/companies/tsubaki/products/cc-tkhp`,
+      canonical: `https://www.rstech.co.il/${locale}/companies/tsubaki/products/cc-tkhp`,
       languages: {
-        en: `https://rstech.co.il/en/companies/tsubaki/products/cc-tkhp`,
-        he: `https://rstech.co.il/he/companies/tsubaki/products/cc-tkhp`,
-        "x-default": `https://rstech.co.il/en/companies/tsubaki/products/cc-tkhp`,
+        en: `https://www.rstech.co.il/en/companies/tsubaki/products/cc-tkhp`,
+        he: `https://www.rstech.co.il/he/companies/tsubaki/products/cc-tkhp`,
+        "x-default": `https://www.rstech.co.il/en/companies/tsubaki/products/cc-tkhp`,
       },
     },
   };

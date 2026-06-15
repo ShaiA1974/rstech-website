@@ -21,11 +21,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: "Tube-Mount Outdoor Electronics Vents — Gore Vents via RSTECH Electronics Israel",
     description: "Gore tube-mount ePTFE vents route pressure equalization to a remote location in sealed enclosures. Ideal for electronics and gearbox applications. RSTECH Electronics Israel. Part number: PMF100570.",
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/companies/gore/products/vent-oe-tube-mount`,
+      canonical: `https://www.rstech.co.il/${locale}/companies/gore/products/vent-oe-tube-mount`,
       languages: {
-        en: `https://rstech.co.il/en/companies/gore/products/vent-oe-tube-mount`,
-        he: `https://rstech.co.il/he/companies/gore/products/vent-oe-tube-mount`,
-        "x-default": `https://rstech.co.il/en/companies/gore/products/vent-oe-tube-mount`,
+        en: `https://www.rstech.co.il/en/companies/gore/products/vent-oe-tube-mount`,
+        he: `https://www.rstech.co.il/he/companies/gore/products/vent-oe-tube-mount`,
+        "x-default": `https://www.rstech.co.il/en/companies/gore/products/vent-oe-tube-mount`,
       },
     },
   };
@@ -100,7 +100,7 @@ export default async function Page({ params }: Props) {
   return (
     <>
       <Header locale={locale} />
-        <GoreProductSchema id="vent-oe-tube-mount" url={"https://rstech.co.il/en/companies/gore/products/vent-oe-tube-mount"} />
+        <GoreProductSchema id="vent-oe-tube-mount" url={"https://www.rstech.co.il/en/companies/gore/products/vent-oe-tube-mount"} />
       <main className="flex-1">
         {/* Hero */}
         <div className="relative bg-[#0F172A] overflow-hidden">

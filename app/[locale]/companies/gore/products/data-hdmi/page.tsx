@@ -19,11 +19,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: "HDMI Cables — Gore Cables via RSTECH Electronics Israel",
     description: "Gore ultra-thin, flexible HDMI cables delivering uncompromised 4K video over long distances. For medical, industrial & electronics applications. Distributed by RSTECH Israel.",
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/companies/gore/products/data-hdmi`,
+      canonical: `https://www.rstech.co.il/${locale}/companies/gore/products/data-hdmi`,
       languages: {
-        en: `https://rstech.co.il/en/companies/gore/products/data-hdmi`,
-        he: `https://rstech.co.il/he/companies/gore/products/data-hdmi`,
-        "x-default": `https://rstech.co.il/en/companies/gore/products/data-hdmi`,
+        en: `https://www.rstech.co.il/en/companies/gore/products/data-hdmi`,
+        he: `https://www.rstech.co.il/he/companies/gore/products/data-hdmi`,
+        "x-default": `https://www.rstech.co.il/en/companies/gore/products/data-hdmi`,
       },
     },
   };

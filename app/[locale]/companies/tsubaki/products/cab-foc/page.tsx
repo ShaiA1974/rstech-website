@@ -24,11 +24,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `${product.name} — Tsubaki Kabelschlepp via RSTECH Electronics Israel`,
     description: product.description,
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/companies/tsubaki/products/cab-foc`,
+      canonical: `https://www.rstech.co.il/${locale}/companies/tsubaki/products/cab-foc`,
       languages: {
-        en: `https://rstech.co.il/en/companies/tsubaki/products/cab-foc`,
-        he: `https://rstech.co.il/he/companies/tsubaki/products/cab-foc`,
-        "x-default": `https://rstech.co.il/en/companies/tsubaki/products/cab-foc`,
+        en: `https://www.rstech.co.il/en/companies/tsubaki/products/cab-foc`,
+        he: `https://www.rstech.co.il/he/companies/tsubaki/products/cab-foc`,
+        "x-default": `https://www.rstech.co.il/en/companies/tsubaki/products/cab-foc`,
       },
     },
   };

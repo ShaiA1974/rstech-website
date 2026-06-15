@@ -20,11 +20,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description:
       "FAR 25.1359-compliant Gore aerospace wire with lightweight ePTFE insulation. Flame, smoke, and fluid resistant for civil and military aircraft. RSTECH Electronics Israel.",
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/companies/gore/products/pwr-aerospace-wire`,
+      canonical: `https://www.rstech.co.il/${locale}/companies/gore/products/pwr-aerospace-wire`,
       languages: {
-        en: "https://rstech.co.il/en/companies/gore/products/pwr-aerospace-wire",
-        he: "https://rstech.co.il/he/companies/gore/products/pwr-aerospace-wire",
-        "x-default": "https://rstech.co.il/en/companies/gore/products/pwr-aerospace-wire",
+        en: "https://www.rstech.co.il/en/companies/gore/products/pwr-aerospace-wire",
+        he: "https://www.rstech.co.il/he/companies/gore/products/pwr-aerospace-wire",
+        "x-default": "https://www.rstech.co.il/en/companies/gore/products/pwr-aerospace-wire",
       },
     },
   };

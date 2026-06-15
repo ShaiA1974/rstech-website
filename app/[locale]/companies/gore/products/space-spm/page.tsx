@@ -19,11 +19,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: "SPM Space Cables — Gore via RSTECH Electronics Israel",
     description: "Gore SPM-series space power and multipurpose cables for reliable electrical performance in vacuum and extreme temperature environment of space. Authorized in Israel — RSTECH Electronics.",
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/companies/gore/products/space-spm`,
+      canonical: `https://www.rstech.co.il/${locale}/companies/gore/products/space-spm`,
       languages: {
-        en: `https://rstech.co.il/en/companies/gore/products/space-spm`,
-        he: `https://rstech.co.il/he/companies/gore/products/space-spm`,
-        "x-default": `https://rstech.co.il/en/companies/gore/products/space-spm`,
+        en: `https://www.rstech.co.il/en/companies/gore/products/space-spm`,
+        he: `https://www.rstech.co.il/he/companies/gore/products/space-spm`,
+        "x-default": `https://www.rstech.co.il/en/companies/gore/products/space-spm`,
       },
     },
   };

@@ -40,11 +40,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `${product.name} — JAE Connector via RSTECH Electronics Israel`,
     description: product.description,
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/companies/jae/products/${productId}`,
+      canonical: `https://www.rstech.co.il/${locale}/companies/jae/products/${productId}`,
       languages: {
-        en: `https://rstech.co.il/en/companies/jae/products/${productId}`,
-        he: `https://rstech.co.il/he/companies/jae/products/${productId}`,
-        "x-default": `https://rstech.co.il/en/companies/jae/products/${productId}`,
+        en: `https://www.rstech.co.il/en/companies/jae/products/${productId}`,
+        he: `https://www.rstech.co.il/he/companies/jae/products/${productId}`,
+        "x-default": `https://www.rstech.co.il/en/companies/jae/products/${productId}`,
       },
     },
   };

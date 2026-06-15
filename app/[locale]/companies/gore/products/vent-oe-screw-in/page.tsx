@@ -21,11 +21,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: "Screw-In Outdoor Electronics Vents — Gore Vents via RSTECH Electronics Israel | PMF100318, PMF100320, PMF300670, PMF200400",
     description: "Gore threaded ePTFE screw-in vents for outdoor enclosures. IP68 & IP69K rated, tamper-resistant versions available, field-replaceable. Authorized distributor in Israel — RSTECH Electronics. Part numbers: PMF100318, PMF100319, PMF100320, PMF100321, PMF100600, PMF300670, PMF300671, PMF200400, PMF200444, PMF200542.",
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/companies/gore/products/vent-oe-screw-in`,
+      canonical: `https://www.rstech.co.il/${locale}/companies/gore/products/vent-oe-screw-in`,
       languages: {
-        en: `https://rstech.co.il/en/companies/gore/products/vent-oe-screw-in`,
-        he: `https://rstech.co.il/he/companies/gore/products/vent-oe-screw-in`,
-        "x-default": `https://rstech.co.il/en/companies/gore/products/vent-oe-screw-in`,
+        en: `https://www.rstech.co.il/en/companies/gore/products/vent-oe-screw-in`,
+        he: `https://www.rstech.co.il/he/companies/gore/products/vent-oe-screw-in`,
+        "x-default": `https://www.rstech.co.il/en/companies/gore/products/vent-oe-screw-in`,
       },
     },
   };
@@ -100,7 +100,7 @@ export default async function Page({ params }: Props) {
   return (
     <>
       <Header locale={locale} />
-        <GoreProductSchema id="vent-oe-screw-in" url={"https://rstech.co.il/en/companies/gore/products/vent-oe-screw-in"} />
+        <GoreProductSchema id="vent-oe-screw-in" url={"https://www.rstech.co.il/en/companies/gore/products/vent-oe-screw-in"} />
       <main className="flex-1">
         {/* Hero */}
         <div className="relative bg-[#0F172A] overflow-hidden">

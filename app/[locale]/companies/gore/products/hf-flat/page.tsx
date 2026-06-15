@@ -20,11 +20,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description:
       "Gore High Flex Flat Cables engineered for millions of flex cycles in robotic and automation systems. Authorized Gore distributor in Israel — RSTECH Electronics.",
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/companies/gore/products/hf-flat`,
+      canonical: `https://www.rstech.co.il/${locale}/companies/gore/products/hf-flat`,
       languages: {
-        en: "https://rstech.co.il/en/companies/gore/products/hf-flat",
-        he: "https://rstech.co.il/he/companies/gore/products/hf-flat",
-        "x-default": "https://rstech.co.il/en/companies/gore/products/hf-flat",
+        en: "https://www.rstech.co.il/en/companies/gore/products/hf-flat",
+        he: "https://www.rstech.co.il/he/companies/gore/products/hf-flat",
+        "x-default": "https://www.rstech.co.il/en/companies/gore/products/hf-flat",
       },
     },
   };

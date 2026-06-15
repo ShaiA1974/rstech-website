@@ -16,8 +16,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description:
       "Contact RSTECH Electronics for pricing, availability, and technical consultation on W.L. Gore, Tsubaki Kabelschlepp, and JAE products. Local Israeli support in Hebrew and English.",
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/contact`,
-      languages: { en: "https://rstech.co.il/en/contact", he: "https://rstech.co.il/he/contact", "x-default": "https://rstech.co.il/en/contact" },
+      canonical: `https://www.rstech.co.il/${locale}/contact`,
+      languages: { en: "https://www.rstech.co.il/en/contact", he: "https://www.rstech.co.il/he/contact", "x-default": "https://www.rstech.co.il/en/contact" },
     },
   };
 }

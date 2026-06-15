@@ -21,11 +21,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: "Weldable Outdoor Electronics Vents — Gore Vents via RSTECH Electronics Israel",
     description: "Gore ultrasonic or heat-weldable ePTFE vent membranes for seamless integration into plastic enclosures. Custom shapes available. Authorized Gore distributor in Israel — RSTECH Electronics. Part numbers: VC70008-1, VE0001SLR, VE0003AML.",
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/companies/gore/products/vent-oe-weldable`,
+      canonical: `https://www.rstech.co.il/${locale}/companies/gore/products/vent-oe-weldable`,
       languages: {
-        en: `https://rstech.co.il/en/companies/gore/products/vent-oe-weldable`,
-        he: `https://rstech.co.il/he/companies/gore/products/vent-oe-weldable`,
-        "x-default": `https://rstech.co.il/en/companies/gore/products/vent-oe-weldable`,
+        en: `https://www.rstech.co.il/en/companies/gore/products/vent-oe-weldable`,
+        he: `https://www.rstech.co.il/he/companies/gore/products/vent-oe-weldable`,
+        "x-default": `https://www.rstech.co.il/en/companies/gore/products/vent-oe-weldable`,
       },
     },
   };
@@ -100,7 +100,7 @@ export default async function Page({ params }: Props) {
   return (
     <>
       <Header locale={locale} />
-        <GoreProductSchema id="vent-oe-weldable" url={"https://rstech.co.il/en/companies/gore/products/vent-oe-weldable"} />
+        <GoreProductSchema id="vent-oe-weldable" url={"https://www.rstech.co.il/en/companies/gore/products/vent-oe-weldable"} />
       <main className="flex-1">
         {/* Hero */}
         <div className="relative bg-[#0F172A] overflow-hidden">

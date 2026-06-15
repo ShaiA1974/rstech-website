@@ -20,11 +20,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description:
       "Gore ePTFE capacitor films for miniaturized, high-performance power electronics capacitors. Superior dielectric properties and thermal stability. RSTECH Electronics Israel.",
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/companies/gore/products/pwr-capacitor-films`,
+      canonical: `https://www.rstech.co.il/${locale}/companies/gore/products/pwr-capacitor-films`,
       languages: {
-        en: "https://rstech.co.il/en/companies/gore/products/pwr-capacitor-films",
-        he: "https://rstech.co.il/he/companies/gore/products/pwr-capacitor-films",
-        "x-default": "https://rstech.co.il/en/companies/gore/products/pwr-capacitor-films",
+        en: "https://www.rstech.co.il/en/companies/gore/products/pwr-capacitor-films",
+        he: "https://www.rstech.co.il/he/companies/gore/products/pwr-capacitor-films",
+        "x-default": "https://www.rstech.co.il/en/companies/gore/products/pwr-capacitor-films",
       },
     },
   };

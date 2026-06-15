@@ -16,11 +16,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description:
       "Full catalog of JAE (Japan Aviation Electronics) connectors represented by RSTECH Electronics in Israel: board-to-board, FPC/FFC, wire-to-board, circular, memory card/module, high-speed, and automotive connectors.",
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/companies/jae/products`,
+      canonical: `https://www.rstech.co.il/${locale}/companies/jae/products`,
       languages: {
-        en: "https://rstech.co.il/en/companies/jae/products",
-        he: "https://rstech.co.il/he/companies/jae/products",
-        "x-default": "https://rstech.co.il/en/companies/jae/products",
+        en: "https://www.rstech.co.il/en/companies/jae/products",
+        he: "https://www.rstech.co.il/he/companies/jae/products",
+        "x-default": "https://www.rstech.co.il/en/companies/jae/products",
       },
     },
   };

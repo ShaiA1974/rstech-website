@@ -19,11 +19,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description:
       "Full TRAXLINE® cable range: control, power, high voltage, BUS, coaxial, data, fiber optic and OEM cables for dynamic cable carrier applications. Authorized distributor in Israel.",
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/companies/tsubaki/cables`,
+      canonical: `https://www.rstech.co.il/${locale}/companies/tsubaki/cables`,
       languages: {
-        en: "https://rstech.co.il/en/companies/tsubaki/cables",
-        he: "https://rstech.co.il/he/companies/tsubaki/cables",
-        "x-default": "https://rstech.co.il/en/companies/tsubaki/cables",
+        en: "https://www.rstech.co.il/en/companies/tsubaki/cables",
+        he: "https://www.rstech.co.il/he/companies/tsubaki/cables",
+        "x-default": "https://www.rstech.co.il/en/companies/tsubaki/cables",
       },
     },
   };

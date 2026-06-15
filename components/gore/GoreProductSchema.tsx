@@ -39,7 +39,7 @@ export default function GoreProductSchema({ id, url }: Props) {
       url: "https://www.gore.com",
     },
     ...(product.imageUrl
-      ? { image: `https://rstech.co.il${product.imageUrl}` }
+      ? { image: `https://www.rstech.co.il${product.imageUrl}` }
       : {}),
     hasVariant: product.partNumbers.map((pn) => ({
       "@type": "Product",
@@ -58,7 +58,7 @@ export default function GoreProductSchema({ id, url }: Props) {
         seller: {
           "@type": "Organization",
           name: "RSTECH Electronics Ltd",
-          url: "https://rstech.co.il",
+          url: "https://www.rstech.co.il",
         },
         url,
         availability: "https://schema.org/InStock",
@@ -75,7 +75,7 @@ export default function GoreProductSchema({ id, url }: Props) {
       seller: {
         "@type": "Organization",
         name: "RSTECH Electronics Ltd",
-        url: "https://rstech.co.il",
+        url: "https://www.rstech.co.il",
       },
       availability: "https://schema.org/InStock",
       areaServed: {

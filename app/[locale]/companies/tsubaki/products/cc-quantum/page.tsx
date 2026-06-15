@@ -24,11 +24,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `${product.name} — Tsubaki Kabelschlepp via RSTECH Electronics Israel`,
     description: product.description,
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/companies/tsubaki/products/cc-quantum`,
+      canonical: `https://www.rstech.co.il/${locale}/companies/tsubaki/products/cc-quantum`,
       languages: {
-        en: `https://rstech.co.il/en/companies/tsubaki/products/cc-quantum`,
-        he: `https://rstech.co.il/he/companies/tsubaki/products/cc-quantum`,
-        "x-default": `https://rstech.co.il/en/companies/tsubaki/products/cc-quantum`,
+        en: `https://www.rstech.co.il/en/companies/tsubaki/products/cc-quantum`,
+        he: `https://www.rstech.co.il/he/companies/tsubaki/products/cc-quantum`,
+        "x-default": `https://www.rstech.co.il/en/companies/tsubaki/products/cc-quantum`,
       },
     },
   };

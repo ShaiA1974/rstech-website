@@ -20,11 +20,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description:
       "Gore Trackless Cables for linear motion stages eliminate cable carriers while delivering exceptional flex durability. Authorized Gore distributor in Israel — RSTECH Electronics.",
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/companies/gore/products/hf-trackless`,
+      canonical: `https://www.rstech.co.il/${locale}/companies/gore/products/hf-trackless`,
       languages: {
-        en: "https://rstech.co.il/en/companies/gore/products/hf-trackless",
-        he: "https://rstech.co.il/he/companies/gore/products/hf-trackless",
-        "x-default": "https://rstech.co.il/en/companies/gore/products/hf-trackless",
+        en: "https://www.rstech.co.il/en/companies/gore/products/hf-trackless",
+        he: "https://www.rstech.co.il/he/companies/gore/products/hf-trackless",
+        "x-default": "https://www.rstech.co.il/en/companies/gore/products/hf-trackless",
       },
     },
   };

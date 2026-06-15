@@ -21,11 +21,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: "Plug-In Packaging Vents — Gore Vents via RSTECH Electronics Israel",
     description: "Gore plug-in ePTFE membrane vents for drums, containers & specialty packaging. Controlled vapor exchange, liquid-ingress protection, DOT/ADR compliant. RSTECH Electronics Israel. Model designations: D38, D17, D15, D10, D3.",
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/companies/gore/products/vent-pkg-plugin`,
+      canonical: `https://www.rstech.co.il/${locale}/companies/gore/products/vent-pkg-plugin`,
       languages: {
-        en: `https://rstech.co.il/en/companies/gore/products/vent-pkg-plugin`,
-        he: `https://rstech.co.il/he/companies/gore/products/vent-pkg-plugin`,
-        "x-default": `https://rstech.co.il/en/companies/gore/products/vent-pkg-plugin`,
+        en: `https://www.rstech.co.il/en/companies/gore/products/vent-pkg-plugin`,
+        he: `https://www.rstech.co.il/he/companies/gore/products/vent-pkg-plugin`,
+        "x-default": `https://www.rstech.co.il/en/companies/gore/products/vent-pkg-plugin`,
       },
     },
   };
@@ -100,7 +100,7 @@ export default async function Page({ params }: Props) {
   return (
     <>
       <Header locale={locale} />
-        <GoreProductSchema id="vent-pkg-plugin" url={"https://rstech.co.il/en/companies/gore/products/vent-pkg-plugin"} />
+        <GoreProductSchema id="vent-pkg-plugin" url={"https://www.rstech.co.il/en/companies/gore/products/vent-pkg-plugin"} />
       <main className="flex-1">
         {/* Hero */}
         <div className="relative bg-[#0F172A] overflow-hidden">

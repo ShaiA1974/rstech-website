@@ -16,11 +16,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description:
       "Full catalog of Tsubaki Kabelschlepp products represented by RSTECH Electronics in Israel: cable carriers (MONO, QUANTUM®, ROBOTRAX®), TRAXLINE® cables, conveyor systems, and guideway protection.",
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/companies/tsubaki/products`,
+      canonical: `https://www.rstech.co.il/${locale}/companies/tsubaki/products`,
       languages: {
-        en: "https://rstech.co.il/en/companies/tsubaki/products",
-        he: "https://rstech.co.il/he/companies/tsubaki/products",
-        "x-default": "https://rstech.co.il/en/companies/tsubaki/products",
+        en: "https://www.rstech.co.il/en/companies/tsubaki/products",
+        he: "https://www.rstech.co.il/he/companies/tsubaki/products",
+        "x-default": "https://www.rstech.co.il/en/companies/tsubaki/products",
       },
     },
   };

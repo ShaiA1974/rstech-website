@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   description:
     "Complete catalog of W.L. Gore vent part numbers available through RSTECH Electronics in Israel. Browse PMF, PE, VE7 and all vent series. Request a quote for any part number.",
   alternates: {
-    canonical: "https://rstech.co.il/en/companies/gore/parts",
+    canonical: "https://www.rstech.co.il/en/companies/gore/parts",
   },
 };
 

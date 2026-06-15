@@ -22,11 +22,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description:
       "Gore ePTFE vents for automotive headlamps, tail lamps, and LED assemblies. IP6K/IPX9K, prevents fogging, UV-stable membrane. Authorized distributor in Israel — RSTECH Electronics. Key part numbers: VE2122, VE2068, VE2113, VE2084, VE2051, VE2100, VE2110, VE2117.",
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/companies/gore/products/vent-auto-lighting`,
+      canonical: `https://www.rstech.co.il/${locale}/companies/gore/products/vent-auto-lighting`,
       languages: {
-        en: `https://rstech.co.il/en/companies/gore/products/vent-auto-lighting`,
-        he: `https://rstech.co.il/he/companies/gore/products/vent-auto-lighting`,
-        "x-default": `https://rstech.co.il/en/companies/gore/products/vent-auto-lighting`,
+        en: `https://www.rstech.co.il/en/companies/gore/products/vent-auto-lighting`,
+        he: `https://www.rstech.co.il/he/companies/gore/products/vent-auto-lighting`,
+        "x-default": `https://www.rstech.co.il/en/companies/gore/products/vent-auto-lighting`,
       },
     },
   };
@@ -120,7 +120,7 @@ export default async function Page({ params }: Props) {
   return (
     <>
       <Header locale={locale} />
-        <GoreProductSchema id="vent-auto-lighting" url={"https://rstech.co.il/en/companies/gore/products/vent-auto-lighting"} />
+        <GoreProductSchema id="vent-auto-lighting" url={"https://www.rstech.co.il/en/companies/gore/products/vent-auto-lighting"} />
       <main className="flex-1">
         {/* Hero */}
         <div className="relative bg-[#0F172A] overflow-hidden">

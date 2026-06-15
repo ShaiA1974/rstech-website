@@ -19,11 +19,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: "Flat Cables — Gore Cables via RSTECH Electronics Israel",
     description: "Gore fine-pitch flat cables for tight-space routing. Extremely lightweight with reliable flex life for medical, aerospace & industrial space-constrained applications. Distributed by RSTECH Israel.",
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/companies/gore/products/data-flat`,
+      canonical: `https://www.rstech.co.il/${locale}/companies/gore/products/data-flat`,
       languages: {
-        en: `https://rstech.co.il/en/companies/gore/products/data-flat`,
-        he: `https://rstech.co.il/he/companies/gore/products/data-flat`,
-        "x-default": `https://rstech.co.il/en/companies/gore/products/data-flat`,
+        en: `https://www.rstech.co.il/en/companies/gore/products/data-flat`,
+        he: `https://www.rstech.co.il/he/companies/gore/products/data-flat`,
+        "x-default": `https://www.rstech.co.il/en/companies/gore/products/data-flat`,
       },
     },
   };

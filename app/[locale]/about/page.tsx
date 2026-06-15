@@ -30,8 +30,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description:
       "RSTECH Electronics Ltd is the authorized Israeli representative of W.L. Gore, Tsubaki Kabelschlepp, and JAE. Local technical support and Hebrew-language service.",
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/about`,
-      languages: { en: "https://rstech.co.il/en/about", he: "https://rstech.co.il/he/about", "x-default": "https://rstech.co.il/en/about" },
+      canonical: `https://www.rstech.co.il/${locale}/about`,
+      languages: { en: "https://www.rstech.co.il/en/about", he: "https://www.rstech.co.il/he/about", "x-default": "https://www.rstech.co.il/en/about" },
     },
   };
 }

@@ -22,11 +22,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description:
       "Gore ePTFE acoustic vents for automotive microphones and ADAS sensors. IP6K8-rated, −40°C to +105°C, life-of-vehicle protection. Authorized distributor in Israel — RSTECH Electronics. Part numbers: AAV10307, AAV10307-R.",
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/companies/gore/products/vent-auto-acoustic`,
+      canonical: `https://www.rstech.co.il/${locale}/companies/gore/products/vent-auto-acoustic`,
       languages: {
-        en: `https://rstech.co.il/en/companies/gore/products/vent-auto-acoustic`,
-        he: `https://rstech.co.il/he/companies/gore/products/vent-auto-acoustic`,
-        "x-default": `https://rstech.co.il/en/companies/gore/products/vent-auto-acoustic`,
+        en: `https://www.rstech.co.il/en/companies/gore/products/vent-auto-acoustic`,
+        he: `https://www.rstech.co.il/he/companies/gore/products/vent-auto-acoustic`,
+        "x-default": `https://www.rstech.co.il/en/companies/gore/products/vent-auto-acoustic`,
       },
     },
   };
@@ -108,7 +108,7 @@ export default async function Page({ params }: Props) {
   return (
     <>
       <Header locale={locale} />
-        <GoreProductSchema id="vent-auto-acoustic" url={"https://rstech.co.il/en/companies/gore/products/vent-auto-acoustic"} />
+        <GoreProductSchema id="vent-auto-acoustic" url={"https://www.rstech.co.il/en/companies/gore/products/vent-auto-acoustic"} />
       <main className="flex-1">
         {/* Hero */}
         <div className="relative bg-[#0F172A] overflow-hidden">

@@ -19,11 +19,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: "FireWire Cables — Gore Cables via RSTECH Electronics Israel",
     description: "Gore FireWire (IEEE 1394) cables with exceptional flex performance and signal integrity for industrial imaging and data acquisition. Distributed by RSTECH Electronics Israel.",
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/companies/gore/products/data-firewire`,
+      canonical: `https://www.rstech.co.il/${locale}/companies/gore/products/data-firewire`,
       languages: {
-        en: `https://rstech.co.il/en/companies/gore/products/data-firewire`,
-        he: `https://rstech.co.il/he/companies/gore/products/data-firewire`,
-        "x-default": `https://rstech.co.il/en/companies/gore/products/data-firewire`,
+        en: `https://www.rstech.co.il/en/companies/gore/products/data-firewire`,
+        he: `https://www.rstech.co.il/he/companies/gore/products/data-firewire`,
+        "x-default": `https://www.rstech.co.il/en/companies/gore/products/data-firewire`,
       },
     },
   };

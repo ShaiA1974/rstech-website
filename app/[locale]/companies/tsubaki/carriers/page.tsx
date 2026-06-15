@@ -20,11 +20,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description:
       "Full range of Tsubaki Kabelschlepp cable carriers: plastic, steel, hybrid and aluminium. MONO, QUANTUM®, ROBOTRAX®, CLEANVEYOR and more. Filter by material and opening style. Authorized distributor in Israel.",
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/companies/tsubaki/carriers`,
+      canonical: `https://www.rstech.co.il/${locale}/companies/tsubaki/carriers`,
       languages: {
-        en: "https://rstech.co.il/en/companies/tsubaki/carriers",
-        he: "https://rstech.co.il/he/companies/tsubaki/carriers",
-        "x-default": "https://rstech.co.il/en/companies/tsubaki/carriers",
+        en: "https://www.rstech.co.il/en/companies/tsubaki/carriers",
+        he: "https://www.rstech.co.il/he/companies/tsubaki/carriers",
+        "x-default": "https://www.rstech.co.il/en/companies/tsubaki/carriers",
       },
     },
   };

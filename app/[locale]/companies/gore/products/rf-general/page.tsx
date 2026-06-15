@@ -19,11 +19,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: "General Purpose Microwave/RF Assemblies — Gore via RSTECH Electronics Israel",
     description: "Gore General Purpose Microwave/RF Cable Assemblies: DC to 70 GHz, low insertion loss, phase-stable across temperature. Authorized Gore distributor in Israel — RSTECH Electronics.",
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/companies/gore/products/rf-general`,
+      canonical: `https://www.rstech.co.il/${locale}/companies/gore/products/rf-general`,
       languages: {
-        en: `https://rstech.co.il/en/companies/gore/products/rf-general`,
-        he: `https://rstech.co.il/he/companies/gore/products/rf-general`,
-        "x-default": `https://rstech.co.il/en/companies/gore/products/rf-general`,
+        en: `https://www.rstech.co.il/en/companies/gore/products/rf-general`,
+        he: `https://www.rstech.co.il/he/companies/gore/products/rf-general`,
+        "x-default": `https://www.rstech.co.il/en/companies/gore/products/rf-general`,
       },
     },
   };

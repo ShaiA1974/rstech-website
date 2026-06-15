@@ -24,11 +24,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `${product.name} — Tsubaki Kabelschlepp via RSTECH Electronics Israel`,
     description: product.description,
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/companies/tsubaki/products/conv-systems`,
+      canonical: `https://www.rstech.co.il/${locale}/companies/tsubaki/products/conv-systems`,
       languages: {
-        en: `https://rstech.co.il/en/companies/tsubaki/products/conv-systems`,
-        he: `https://rstech.co.il/he/companies/tsubaki/products/conv-systems`,
-        "x-default": `https://rstech.co.il/en/companies/tsubaki/products/conv-systems`,
+        en: `https://www.rstech.co.il/en/companies/tsubaki/products/conv-systems`,
+        he: `https://www.rstech.co.il/he/companies/tsubaki/products/conv-systems`,
+        "x-default": `https://www.rstech.co.il/en/companies/tsubaki/products/conv-systems`,
       },
     },
   };

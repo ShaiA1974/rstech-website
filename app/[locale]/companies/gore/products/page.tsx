@@ -16,11 +16,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description:
       "Full catalog of W.L. Gore products represented by RSTECH Electronics in Israel: cables & assemblies, SKYFLEX® aerospace sealant, and ePTFE vents for automotive, electronics, and more.",
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/companies/gore/products`,
+      canonical: `https://www.rstech.co.il/${locale}/companies/gore/products`,
       languages: {
-        en: "https://rstech.co.il/en/companies/gore/products",
-        he: "https://rstech.co.il/he/companies/gore/products",
-        "x-default": "https://rstech.co.il/en/companies/gore/products",
+        en: "https://www.rstech.co.il/en/companies/gore/products",
+        he: "https://www.rstech.co.il/he/companies/gore/products",
+        "x-default": "https://www.rstech.co.il/en/companies/gore/products",
       },
     },
   };

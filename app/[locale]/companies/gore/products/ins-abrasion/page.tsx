@@ -20,11 +20,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description:
       "Gore ePTFE abrasion-resistant cable jackets extend service life in mechanical wear environments. Industrial, aerospace, and automotive. Authorized Gore distributor — RSTECH Electronics Israel.",
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/companies/gore/products/ins-abrasion`,
+      canonical: `https://www.rstech.co.il/${locale}/companies/gore/products/ins-abrasion`,
       languages: {
-        en: "https://rstech.co.il/en/companies/gore/products/ins-abrasion",
-        he: "https://rstech.co.il/he/companies/gore/products/ins-abrasion",
-        "x-default": "https://rstech.co.il/en/companies/gore/products/ins-abrasion",
+        en: "https://www.rstech.co.il/en/companies/gore/products/ins-abrasion",
+        he: "https://www.rstech.co.il/he/companies/gore/products/ins-abrasion",
+        "x-default": "https://www.rstech.co.il/en/companies/gore/products/ins-abrasion",
       },
     },
   };

@@ -19,11 +19,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: "VNA Microwave/RF Test Assemblies — Gore via RSTECH Electronics Israel",
     description: "Gore VNA test cable assemblies optimized for vector network analyzer measurements. Stable phase, low insertion loss, precision 50 Ω. Authorized in Israel — RSTECH Electronics.",
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/companies/gore/products/rf-vna`,
+      canonical: `https://www.rstech.co.il/${locale}/companies/gore/products/rf-vna`,
       languages: {
-        en: `https://rstech.co.il/en/companies/gore/products/rf-vna`,
-        he: `https://rstech.co.il/he/companies/gore/products/rf-vna`,
-        "x-default": `https://rstech.co.il/en/companies/gore/products/rf-vna`,
+        en: `https://www.rstech.co.il/en/companies/gore/products/rf-vna`,
+        he: `https://www.rstech.co.il/he/companies/gore/products/rf-vna`,
+        "x-default": `https://www.rstech.co.il/en/companies/gore/products/rf-vna`,
       },
     },
   };

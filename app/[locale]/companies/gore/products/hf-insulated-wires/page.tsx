@@ -20,11 +20,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description:
       "Gore ePTFE-insulated wires for automation: chemical resistance, extreme temperatures, and abrasion protection. Authorized Gore distributor in Israel — RSTECH Electronics.",
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/companies/gore/products/hf-insulated-wires`,
+      canonical: `https://www.rstech.co.il/${locale}/companies/gore/products/hf-insulated-wires`,
       languages: {
-        en: "https://rstech.co.il/en/companies/gore/products/hf-insulated-wires",
-        he: "https://rstech.co.il/he/companies/gore/products/hf-insulated-wires",
-        "x-default": "https://rstech.co.il/en/companies/gore/products/hf-insulated-wires",
+        en: "https://www.rstech.co.il/en/companies/gore/products/hf-insulated-wires",
+        he: "https://www.rstech.co.il/he/companies/gore/products/hf-insulated-wires",
+        "x-default": "https://www.rstech.co.il/en/companies/gore/products/hf-insulated-wires",
       },
     },
   };

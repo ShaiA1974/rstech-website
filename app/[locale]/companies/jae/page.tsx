@@ -17,17 +17,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description:
       "RSTECH Electronics is the authorized Israeli representative of JAE (Japan Aviation Electronics Industry) — high-precision connectors for aerospace, automotive, and industrial applications.",
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/companies/jae`,
-      languages: { en: "https://rstech.co.il/en/companies/jae", he: "https://rstech.co.il/he/companies/jae", "x-default": "https://rstech.co.il/en/companies/jae" },
+      canonical: `https://www.rstech.co.il/${locale}/companies/jae`,
+      languages: { en: "https://www.rstech.co.il/en/companies/jae", he: "https://www.rstech.co.il/he/companies/jae", "x-default": "https://www.rstech.co.il/en/companies/jae" },
     },
     openGraph: {
       title: "JAE — Japan Aviation Electronics",
       description: "High-precision connectors and interconnects for aerospace, automotive, and industrial applications",
-      url: `https://rstech.co.il/${locale}/companies/jae`,
+      url: `https://www.rstech.co.il/${locale}/companies/jae`,
       type: "website",
       images: [
         {
-          url: "https://rstech.co.il/products/jae/jae-fi.jpg",
+          url: "https://www.rstech.co.il/products/jae/jae-fi.jpg",
           width: 1200,
           height: 630,
           alt: "JAE high-precision connectors",

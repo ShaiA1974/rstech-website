@@ -18,7 +18,7 @@ interface IndexNowPayload {
  * Submit URLs to IndexNow for Bing, Yandex, and Naver indexing
  *
  * Body: { urlList: string[] }
- * Example: { urlList: ["https://rstech.co.il/en/knowledge-base/article-slug"] }
+ * Example: { urlList: ["https://www.rstech.co.il/en/knowledge-base/article-slug"] }
  */
 export async function POST(request: NextRequest) {
   try {

@@ -19,11 +19,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: "Shielded Twisted Pair Cables — Gore Cables via RSTECH Electronics Israel",
     description: "Gore STP cables with excellent noise immunity for critical data transmission in electrically noisy industrial and medical environments. Authorized distributor in Israel — RSTECH Electronics.",
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/companies/gore/products/data-stp`,
+      canonical: `https://www.rstech.co.il/${locale}/companies/gore/products/data-stp`,
       languages: {
-        en: `https://rstech.co.il/en/companies/gore/products/data-stp`,
-        he: `https://rstech.co.il/he/companies/gore/products/data-stp`,
-        "x-default": `https://rstech.co.il/en/companies/gore/products/data-stp`,
+        en: `https://www.rstech.co.il/en/companies/gore/products/data-stp`,
+        he: `https://www.rstech.co.il/he/companies/gore/products/data-stp`,
+        "x-default": `https://www.rstech.co.il/en/companies/gore/products/data-stp`,
       },
     },
   };

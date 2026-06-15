@@ -25,8 +25,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description:
       "RSTECH Electronics Ltd is the authorized Israeli representative of W.L. Gore, Tsubaki Kabelschlepp, and JAE — bringing world-class technology to Israeli industries.",
     alternates: {
-      canonical: `https://rstech.co.il/${locale}`,
-      languages: { en: "https://rstech.co.il/en", he: "https://rstech.co.il/he", "x-default": "https://rstech.co.il/en" },
+      canonical: `https://www.rstech.co.il/${locale}`,
+      languages: { en: "https://www.rstech.co.il/en", he: "https://www.rstech.co.il/he", "x-default": "https://www.rstech.co.il/en" },
     },
   };
 }
@@ -76,6 +76,7 @@ function HeroSection() {
           fill
           className="object-cover object-right"
           priority
+          fetchPriority="high"
           quality={85}
         />
       </div>

@@ -45,11 +45,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `${decoded}${variantStr} — GORE® ${product.name} | RSTECH Electronics Israel`,
     description: `${decoded}${modelStr}${variantStr}: GORE® ${product.name} available from RSTECH Electronics, the authorized W.L. Gore distributor in Israel. Request a quote or sample today.`,
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/companies/gore/parts/${partNumber}`,
+      canonical: `https://www.rstech.co.il/${locale}/companies/gore/parts/${partNumber}`,
       languages: {
-        en: `https://rstech.co.il/en/companies/gore/parts/${partNumber}`,
-        he: `https://rstech.co.il/he/companies/gore/parts/${partNumber}`,
-        "x-default": `https://rstech.co.il/en/companies/gore/parts/${partNumber}`,
+        en: `https://www.rstech.co.il/en/companies/gore/parts/${partNumber}`,
+        he: `https://www.rstech.co.il/he/companies/gore/parts/${partNumber}`,
+        "x-default": `https://www.rstech.co.il/en/companies/gore/parts/${partNumber}`,
       },
     },
   };
@@ -71,7 +71,7 @@ export default async function GorePartNumberPage({ params }: Props) {
   );
 
   const productPageHref = `/companies/gore/products/${product.id}`;
-  const canonicalUrl = `https://rstech.co.il/en/companies/gore/parts/${partNumber}`;
+  const canonicalUrl = `https://www.rstech.co.il/en/companies/gore/parts/${partNumber}`;
 
   // JSON-LD: single Product with this exact MPN
   const jsonLd = {
@@ -86,7 +86,7 @@ export default async function GorePartNumberPage({ params }: Props) {
     url: canonicalUrl,
     ...(partEntry.variant ? { color: partEntry.variant } : {}),
     ...(product.imageUrl
-      ? { image: `https://rstech.co.il${product.imageUrl}` }
+      ? { image: `https://www.rstech.co.il${product.imageUrl}` }
       : {}),
     brand: {
       "@type": "Brand",
@@ -102,7 +102,7 @@ export default async function GorePartNumberPage({ params }: Props) {
       seller: {
         "@type": "Organization",
         name: "RSTECH Electronics Ltd",
-        url: "https://rstech.co.il",
+        url: "https://www.rstech.co.il",
       },
       url: canonicalUrl,
       availability: "https://schema.org/InStock",

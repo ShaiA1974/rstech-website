@@ -19,11 +19,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: "LEW Space Cables — Gore via RSTECH Electronics Israel",
     description: "Gore LEW-series lightweight electrical wires with radiation-hardened ePTFE insulation, NASA and ESA outgassing standards for satellite applications. Authorized in Israel — RSTECH Electronics.",
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/companies/gore/products/space-lew`,
+      canonical: `https://www.rstech.co.il/${locale}/companies/gore/products/space-lew`,
       languages: {
-        en: `https://rstech.co.il/en/companies/gore/products/space-lew`,
-        he: `https://rstech.co.il/he/companies/gore/products/space-lew`,
-        "x-default": `https://rstech.co.il/en/companies/gore/products/space-lew`,
+        en: `https://www.rstech.co.il/en/companies/gore/products/space-lew`,
+        he: `https://www.rstech.co.il/he/companies/gore/products/space-lew`,
+        "x-default": `https://www.rstech.co.il/en/companies/gore/products/space-lew`,
       },
     },
   };

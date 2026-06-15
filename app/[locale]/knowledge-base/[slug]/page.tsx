@@ -23,21 +23,21 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `${content.title} | RSTECH Knowledge Base`,
     description: content.description,
     alternates: {
-      canonical: `https://rstech.co.il/${locale}/knowledge-base/${slug}`,
+      canonical: `https://www.rstech.co.il/${locale}/knowledge-base/${slug}`,
       languages: {
-        en: `https://rstech.co.il/en/knowledge-base/${slug}`,
-        he: `https://rstech.co.il/he/knowledge-base/${slug}`,
-        "x-default": `https://rstech.co.il/en/knowledge-base/${slug}`,
+        en: `https://www.rstech.co.il/en/knowledge-base/${slug}`,
+        he: `https://www.rstech.co.il/he/knowledge-base/${slug}`,
+        "x-default": `https://www.rstech.co.il/en/knowledge-base/${slug}`,
       },
     },
     openGraph: {
       title: content.title,
       description: content.description,
-      url: `https://rstech.co.il/${locale}/knowledge-base/${slug}`,
+      url: `https://www.rstech.co.il/${locale}/knowledge-base/${slug}`,
       type: "article",
       images: [
         {
-          url: `https://rstech.co.il${article.heroImageLocal || '/products/tsubaki/cc-robotrax.jpg'}`,
+          url: `https://www.rstech.co.il${article.heroImageLocal || '/products/tsubaki/cc-robotrax.jpg'}`,
           width: 1200,
           height: 630,
           alt: article.heroAlt,
@@ -109,7 +109,7 @@ function ArticleContent({
     "@type": "Article",
     "headline": content.title,
     "description": content.description,
-    "image": `https://rstech.co.il${article.heroImageLocal || '/products/tsubaki/cc-robotrax.jpg'}`,
+    "image": `https://www.rstech.co.il${article.heroImageLocal || '/products/tsubaki/cc-robotrax.jpg'}`,
     "datePublished": article.date,
     "dateModified": article.date,
     "author": {
@@ -121,7 +121,7 @@ function ArticleContent({
       "name": "RSTECH Electronics",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://rstech.co.il/logo.svg"
+        "url": "https://www.rstech.co.il/logo.svg"
       }
     }
   };
@@ -308,7 +308,7 @@ function ArticleContent({
             <div className="flex flex-wrap items-center gap-4">
               <span className="text-sm font-semibold text-[#7A8A99]">{content.share}</span>
               <a
-                href={`https://www.linkedin.com/sharing/share-offsite/?url=https://rstech.co.il/${locale}/knowledge-base/cable-carrier-selection-guide`}
+                href={`https://www.linkedin.com/sharing/share-offsite/?url=https://www.rstech.co.il/${locale}/knowledge-base/cable-carrier-selection-guide`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-slate-600 hover:text-[#CC1C1C] transition-colors"
