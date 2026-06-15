@@ -168,23 +168,23 @@ function KnowledgeBaseContent({ locale }: { locale: string }) {
                         </div>
 
                         <h3 className="text-lg font-bold text-[#1a202c] mb-2 group-hover:text-[#CC1C1C] transition-colors">
-                          How to Choose the Right Cable Carrier for Your System
+                          {article.title[locale as keyof typeof article.title]}
                         </h3>
 
                         <p className="text-sm text-[#4a5568] leading-relaxed mb-4 flex-1">
-                          A complete engineering guide to selecting cable carriers based on number of cables, bending radius, travel length, and total cost of ownership with practical examples.
+                          {article.excerpt[locale as keyof typeof article.excerpt]}
                         </p>
 
                         <div className="flex items-center justify-between pt-4 border-t border-slate-100">
                           <div className="text-xs text-[#7A8A99]">
-                            {new Date(article.date).toLocaleDateString("en-US", {
+                            {new Date(article.date).toLocaleDateString(locale === "he" ? "he-IL" : "en-US", {
                               year: "numeric",
                               month: "short",
                               day: "numeric",
                             })}
                           </div>
                           <div className="inline-flex items-center gap-2 text-[#CC1C1C] font-semibold text-sm group-hover:gap-3 transition-all">
-                            Read
+                            {locale === "he" ? "קרא" : "Read"}
                             <ArrowRight className="w-4 h-4" />
                           </div>
                         </div>
