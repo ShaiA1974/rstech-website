@@ -63,5 +63,10 @@ Allow: /
 Sitemap: https://rstech.co.il/sitemap.xml
 Crawl-delay: 1
 
-# IndexNow support (Bing, Yandex, Naver)
-# IndexNow URL: https://www.bing.com/indexnow
+# ============================================
+# INDEXNOW PROTOCOL SUPPORT
+# ============================================
+# IndexNow enables instant indexing for Bing, Yandex, and Naver
+# Key file location: https://rstech.co.il/7e5f8a9c-4d2b-11ee-be56-0242ac120002.txt
+# Submission endpoint: https://rstech.co.il/api/indexnow
+# Learn more: https://www.bing.com/indexnow
