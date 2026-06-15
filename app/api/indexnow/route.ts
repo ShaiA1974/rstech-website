@@ -2,7 +2,8 @@ import { NextRequest, NextResponse } from "next/server";
 
 // IndexNow API endpoint key (should be stored in environment variable)
 const INDEXNOW_KEY = process.env.INDEXNOW_KEY || "7e5f8a9c-4d2b-11ee-be56-0242ac120002";
-const SITE_HOST = "rstech.co.il";
+const SITE_HOST = "www.rstech.co.il";
+const SITE_URL = `https://${SITE_HOST}`;
 const INDEXNOW_API = "https://api.indexnow.org/indexnow";
 
 interface IndexNowPayload {
@@ -34,7 +35,7 @@ export async function POST(request: NextRequest) {
     const validUrls = urlList.filter((url) => {
       try {
         new URL(url);
-        return url.includes(SITE_HOST);
+        return url.includes("rstech.co.il");
       } catch {
         return false;
       }
@@ -51,7 +52,7 @@ export async function POST(request: NextRequest) {
     const payload: IndexNowPayload = {
       host: SITE_HOST,
       key: INDEXNOW_KEY,
-      keyLocation: `https://${SITE_HOST}/${INDEXNOW_KEY}.txt`,
+      keyLocation: `${SITE_URL}/${INDEXNOW_KEY}.txt`,
       urlList: validUrls,
     };
 
@@ -98,6 +99,6 @@ export async function GET() {
     status: "ok",
     service: "IndexNow",
     host: SITE_HOST,
-    keyLocation: `https://${SITE_HOST}/${INDEXNOW_KEY}.txt`,
+    keyLocation: `${SITE_URL}/${INDEXNOW_KEY}.txt`,
   });
 }

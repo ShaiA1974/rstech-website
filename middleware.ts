@@ -15,13 +15,14 @@ export function middleware(request: NextRequest) {
   // If no locale prefix, redirect to /en/{path}
   if (!hasLocale && pathname !== "/") {
     return NextResponse.redirect(
-      new URL(`/en${pathname}${request.nextUrl.search}`, request.url)
+      new URL(`/en${pathname}${request.nextUrl.search}`, request.url),
+      308
     );
   }
 
-  // Special case: root path "/" redirects to "/en"
+  // Special case: root path "/" redirects to "/en" (permanent redirect)
   if (pathname === "/") {
-    return NextResponse.redirect(new URL("/en", request.url));
+    return NextResponse.redirect(new URL("/en", request.url), 308);
   }
 
   return intlMiddleware(request);

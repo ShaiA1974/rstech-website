@@ -6,7 +6,7 @@ import { TSUBAKI_CABLES, CABLE_CATEGORIES } from "@/data/tsubaki-cables";
 import { JAE_PRODUCTS } from "@/data/jae-products";
 import { articles } from "@/data/articles";
 
-const BASE = "https://rstech.co.il";
+const BASE = "https://www.rstech.co.il";
 const LOCALES = ["en", "he"];
 
 function urls(path: string, priority: number, changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"]) {

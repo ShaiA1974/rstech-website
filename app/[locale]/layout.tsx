@@ -7,7 +7,7 @@ import AccessibilityToolbar from "@/components/AccessibilityToolbar";
 import "../globals.css";
 
 const SITE_NAME = "RSTECH Electronics";
-const SITE_URL = "https://rstech.co.il";
+const SITE_URL = "https://www.rstech.co.il";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
