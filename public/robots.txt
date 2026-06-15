@@ -60,7 +60,7 @@ Allow: /
 # ============================================
 # SITE RESOURCES
 # ============================================
-Sitemap: https://www.rstech.co.il/sitemap.xml
+Sitemap: https://rstech.co.il/sitemap.xml
 Crawl-delay: 1
 
 # IndexNow support (Bing, Yandex, Naver)

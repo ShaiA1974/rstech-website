@@ -105,11 +105,16 @@ export default async function LocaleLayout({ children, params }: Props) {
   };
 
   return (
-    <div className="min-h-screen flex flex-col" dir={isRtl ? "rtl" : "ltr"}>
-      <NextIntlClientProvider messages={messages}>
-        <AccessibilityToolbar />
-        {children}
-      </NextIntlClientProvider>
-    </div>
+    <>
+      <script dangerouslySetInnerHTML={{
+        __html: `document.documentElement.lang = '${locale}';`
+      }} />
+      <div className="min-h-screen flex flex-col" dir={isRtl ? "rtl" : "ltr"}>
+        <NextIntlClientProvider messages={messages}>
+          <AccessibilityToolbar />
+          {children}
+        </NextIntlClientProvider>
+      </div>
+    </>
   );
 }
