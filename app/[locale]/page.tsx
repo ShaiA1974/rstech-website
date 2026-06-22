@@ -74,6 +74,7 @@ function HeroSection() {
           src="/products/HomePage/RSTECH HomePage.png"
           alt="RSTECH Hero Background"
           fill
+          sizes="100vw"
           className="object-cover object-right"
           priority
           quality={85}
