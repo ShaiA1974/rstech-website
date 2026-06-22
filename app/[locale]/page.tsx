@@ -76,7 +76,6 @@ function HeroSection() {
           fill
           className="object-cover object-right"
           priority
-          fetchPriority="high"
           quality={85}
         />
       </div>
