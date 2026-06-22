@@ -78,6 +78,7 @@ function HeroSection() {
           className="object-cover object-right"
           priority
           quality={85}
+          unoptimized
         />
       </div>
 
