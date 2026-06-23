@@ -7,6 +7,11 @@ const intlMiddleware = createMiddleware(routing);
 export function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
 
+  // Skip static assets and files
+  if (/\.(png|jpg|jpeg|gif|svg|webp|ico|css|js|woff|woff2|ttf|eot|txt)$/.test(pathname)) {
+    return undefined;
+  }
+
   // Check if pathname starts with a locale
   const hasLocale = routing.locales.some(
     (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
@@ -29,5 +34,5 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/((?!_next|api|favicon|robots|sitemap|.*\\.(png|jpg|jpeg|gif|svg|webp|ico|css|js|woff|woff2|ttf|eot)).*)"],
+  matcher: ["/((?!_next|api).*)"],
 };
