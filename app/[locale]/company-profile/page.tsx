@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
 import Image from "next/image";
+import { Printer } from "lucide-react";
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -19,28 +20,60 @@ export default async function CompanyProfilePage({ params }: Props) {
   const isHe = locale === "he";
 
   return (
-    <div className="w-full min-h-screen bg-white p-0 m-0">
-      {/* A4 Size Container - 210mm x 297mm */}
-      <div className="mx-auto" style={{ width: "210mm", height: "297mm" }}>
-        {isHe ? <CompanyProfileHE /> : <CompanyProfileEN />}
+    <>
+      {/* Print Button */}
+      <div className="print:hidden bg-gray-100 p-4 flex justify-between items-center">
+        <div>
+          <h1 className="text-xl font-bold text-gray-800">
+            {isHe ? "דפוס פרופיל החברה" : "Print Company Profile"}
+          </h1>
+          <p className="text-sm text-gray-600">
+            {isHe ? "לחץ על הדפסה כדי להדפיס או לשמור כ-PDF" : "Click Print to save as PDF"}
+          </p>
+        </div>
+        <button
+          onClick={() => window.print()}
+          className="flex items-center gap-2 bg-blue-900 text-white px-6 py-3 rounded-lg hover:bg-blue-800 transition-colors font-semibold"
+        >
+          <Printer className="w-5 h-5" />
+          {isHe ? "הדפס" : "Print"}
+        </button>
       </div>
 
-      {/* Print Styles */}
-      <style jsx global>{`
-        @media print {
-          body {
-            margin: 0;
-            padding: 0;
-            background: white;
+      <div className="w-full min-h-screen bg-white p-0 m-0">
+        {/* A4 Size Container - 210mm x 297mm */}
+        <div className="mx-auto" style={{ width: "210mm", minHeight: "297mm" }}>
+          {isHe ? <CompanyProfileHE /> : <CompanyProfileEN />}
+        </div>
+
+        {/* Print Styles */}
+        <style jsx global>{`
+          @media print {
+            body {
+              margin: 0;
+              padding: 0;
+              background: white;
+            }
+            .print-hide {
+              display: none !important;
+            }
+            .company-profile {
+              margin: 0;
+              padding: 0;
+              page-break-after: avoid;
+              width: 210mm;
+              height: 297mm;
+              box-sizing: border-box;
+            }
+            @page {
+              size: A4;
+              margin: 0;
+              padding: 0;
+            }
           }
-          .company-profile {
-            margin: 0;
-            padding: 0;
-            page-break-after: avoid;
-          }
-        }
-      `}</style>
-    </div>
+        `}</style>
+      </div>
+    </>
   );
 }
 
