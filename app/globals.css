@@ -54,3 +54,45 @@ html[data-a11y-readable] * {
   word-spacing: 0.1em !important;
   line-height: 1.7 !important;
 }
+
+/* ── Ambient hero motion ─────────────────────────────────────── */
+@keyframes glow-drift {
+  0%, 100% { transform: translate(0, -50%) scale(1); opacity: 1; }
+  50% { transform: translate(40px, -42%) scale(1.15); opacity: 0.75; }
+}
+
+@keyframes glow-drift-reverse {
+  0%, 100% { transform: translate(0, 50%) scale(1); opacity: 1; }
+  50% { transform: translate(-35px, 42%) scale(1.12); opacity: 0.7; }
+}
+
+.animate-glow-drift {
+  animation: glow-drift 11s ease-in-out infinite;
+}
+
+.animate-glow-drift-reverse {
+  animation: glow-drift-reverse 13s ease-in-out infinite;
+}
+
+@keyframes glow-pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.2); opacity: 0.6; }
+}
+
+.animate-glow-pulse {
+  animation: glow-pulse 7s ease-in-out infinite;
+}
+
+/* Fade the marquee edges so pills slide in/out smoothly */
+.marquee-mask {
+  mask-image: linear-gradient(to right, transparent, black 6%, black 94%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 6%, black 94%, transparent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-glow-drift,
+  .animate-glow-drift-reverse,
+  .animate-glow-pulse {
+    animation: none;
+  }
+}

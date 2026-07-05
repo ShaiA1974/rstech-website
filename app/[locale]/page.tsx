@@ -6,7 +6,16 @@ import { setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { HeroAnimate, FadeUp, StaggerGrid, StaggerCard } from "@/components/ui/AnimatedSections";
+import {
+  FadeUp,
+  StaggerGrid,
+  StaggerCard,
+  HeroStagger,
+  HeroItem,
+  KenBurns,
+  ScrollHint,
+  Marquee,
+} from "@/components/ui/AnimatedSections";
 import {
   ShieldCheck,
   MapPin,
@@ -64,70 +73,84 @@ function HeroSection() {
           backgroundSize: "32px 32px",
         }}
       />
-      {/* Red glow */}
-      <div className="absolute top-0 right-1/3 w-[500px] h-[500px] bg-[#CC1C1C]/15 rounded-full blur-3xl -translate-y-1/2 pointer-events-none" />
-      <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-[#CC1C1C]/10 rounded-full blur-3xl translate-y-1/2 pointer-events-none" />
+      {/* Red glow — slow drifting orbs */}
+      <div className="absolute top-0 right-1/3 w-[500px] h-[500px] bg-[#CC1C1C]/15 rounded-full blur-3xl -translate-y-1/2 pointer-events-none animate-glow-drift" />
+      <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-[#CC1C1C]/10 rounded-full blur-3xl translate-y-1/2 pointer-events-none animate-glow-drift-reverse" />
 
-      {/* Background image */}
+      {/* Background image with slow ambient zoom */}
       <div className="absolute inset-0 right-0 opacity-40 pointer-events-none overflow-hidden">
-        <Image
-          src="/products/HomePage/RSTECH HomePage.png"
-          alt="RSTECH Hero Background"
-          fill
-          sizes="100vw"
-          className="object-cover object-right"
-          priority
-          quality={85}
-          unoptimized
-        />
+        <KenBurns>
+          <Image
+            src="/products/HomePage/RSTECH HomePage.png"
+            alt="RSTECH Hero Background"
+            fill
+            sizes="100vw"
+            className="object-cover object-right"
+            priority
+            quality={85}
+            unoptimized
+          />
+        </KenBurns>
       </div>
 
       <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <HeroAnimate>
+        <HeroStagger>
           <div className="max-w-2xl">
-            <div className="inline-flex items-center gap-2 bg-[#CC1C1C]/20 border border-[#CC1C1C]/40 text-red-300 text-sm font-medium px-4 py-1.5 rounded-full mb-6 backdrop-blur-sm">
-              <ShieldCheck className="w-4 h-4 shrink-0" />
-              <span>{t("badge")}</span>
-            </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 drop-shadow-lg">
-              {t("title")}
-            </h1>
-            <p className="text-lg md:text-xl text-slate-200 mb-10 max-w-xl leading-relaxed">
-              {t("subtitle")}
-            </p>
-            <div className="flex flex-wrap gap-4 mb-12">
-              <Link
-                href="/companies"
-                className="inline-flex items-center gap-2 bg-[#CC1C1C] text-white font-semibold px-8 py-3.5 rounded-lg hover:bg-[#A01515] transition-colors duration-200 shadow-lg cursor-pointer"
-              >
-                {t("ctaCompanies")}
-                <ArrowRight className="w-4 h-4 shrink-0" />
-              </Link>
-              <Link
-                href="/contact"
-                className="inline-flex items-center gap-2 border border-white/40 bg-white/10 backdrop-blur-sm text-white font-semibold px-8 py-3.5 rounded-lg hover:bg-white/20 hover:border-white/60 transition-colors duration-200 cursor-pointer"
-              >
-                {t("ctaContact")}
-              </Link>
-            </div>
+            <HeroItem>
+              <div className="inline-flex items-center gap-2 bg-[#CC1C1C]/20 border border-[#CC1C1C]/40 text-red-300 text-sm font-medium px-4 py-1.5 rounded-full mb-6 backdrop-blur-sm">
+                <ShieldCheck className="w-4 h-4 shrink-0" />
+                <span>{t("badge")}</span>
+              </div>
+            </HeroItem>
+            <HeroItem>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 drop-shadow-lg">
+                {t("title")}
+              </h1>
+            </HeroItem>
+            <HeroItem>
+              <p className="text-lg md:text-xl text-slate-200 mb-10 max-w-xl leading-relaxed">
+                {t("subtitle")}
+              </p>
+            </HeroItem>
+            <HeroItem>
+              <div className="flex flex-wrap gap-4 mb-12">
+                <Link
+                  href="/companies"
+                  className="inline-flex items-center gap-2 bg-[#CC1C1C] text-white font-semibold px-8 py-3.5 rounded-lg hover:bg-[#A01515] hover:scale-[1.03] active:scale-[0.98] transition-all duration-200 shadow-lg cursor-pointer"
+                >
+                  {t("ctaCompanies")}
+                  <ArrowRight className="w-4 h-4 shrink-0" />
+                </Link>
+                <Link
+                  href="/contact"
+                  className="inline-flex items-center gap-2 border border-white/40 bg-white/10 backdrop-blur-sm text-white font-semibold px-8 py-3.5 rounded-lg hover:bg-white/20 hover:border-white/60 hover:scale-[1.03] active:scale-[0.98] transition-all duration-200 cursor-pointer"
+                >
+                  {t("ctaContact")}
+                </Link>
+              </div>
+            </HeroItem>
 
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-xl">
-              <TrustStat icon={Globe} label={t("stat1Label")} value={t("stat1Value")} />
-              <TrustStat icon={MapPin} label={t("stat2Label")} value={t("stat2Value")} />
-              <TrustStat icon={Package} label={t("stat3Label")} value={t("stat3Value")} />
-              <TrustStat icon={ShieldCheck} label={t("stat4Label")} value={t("stat4Value")} />
-            </div>
+            <HeroItem>
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-xl">
+                <TrustStat icon={Globe} label={t("stat1Label")} value={t("stat1Value")} />
+                <TrustStat icon={MapPin} label={t("stat2Label")} value={t("stat2Value")} />
+                <TrustStat icon={Package} label={t("stat3Label")} value={t("stat3Value")} />
+                <TrustStat icon={ShieldCheck} label={t("stat4Label")} value={t("stat4Value")} />
+              </div>
+            </HeroItem>
           </div>
-        </HeroAnimate>
+        </HeroStagger>
       </div>
+
+      <ScrollHint />
     </section>
   );
 }
 
 function TrustStat({ icon: Icon, label, value }: { icon: LucideIcon; label: string; value: string }) {
   return (
-    <div className="bg-white/5 rounded-xl p-4">
-      <Icon className="w-5 h-5 text-red-400 mb-2" />
+    <div className="group bg-white/5 rounded-xl p-4 hover:bg-white/10 hover:-translate-y-1 transition-all duration-300">
+      <Icon className="w-5 h-5 text-red-400 mb-2 group-hover:scale-110 transition-transform duration-300" />
       <div className="text-white text-sm font-semibold">{value}</div>
       <div className="text-slate-400 text-xs mt-0.5">{label}</div>
     </div>
@@ -149,18 +172,20 @@ function IndustriesStrip() {
   return (
     <section className="bg-white border-b border-[#e2e8f0] py-4">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-wrap items-center gap-2 justify-center">
-          <span className="text-xs font-semibold uppercase tracking-wider text-[#7A8A99] me-2">
+        <div className="flex items-center gap-4">
+          <span className="text-xs font-semibold uppercase tracking-wider text-[#7A8A99] shrink-0">
             {t("label")}
           </span>
-          {industries.map((industry) => (
-            <span
-              key={industry}
-              className="text-xs font-medium text-[#334155] bg-[#f0f4f8] border border-[#e2e8f0] px-3 py-1.5 rounded-full"
-            >
-              {industry}
-            </span>
-          ))}
+          <Marquee className="flex-1" duration={28}>
+            {industries.map((industry) => (
+              <span
+                key={industry}
+                className="text-xs font-medium text-[#334155] bg-[#f0f4f8] border border-[#e2e8f0] px-3 py-1.5 rounded-full whitespace-nowrap"
+              >
+                {industry}
+              </span>
+            ))}
+          </Marquee>
         </div>
       </div>
     </section>
@@ -325,8 +350,8 @@ function WhySection() {
         <StaggerGrid className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {items.map(({ key, icon: Icon, accentBg, accentColor }) => (
             <StaggerCard key={key}>
-              <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
-                <div className={`w-11 h-11 ${accentBg} rounded-lg flex items-center justify-center mb-4`}>
+              <div className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
+                <div className={`w-11 h-11 ${accentBg} rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300`}>
                   <Icon className={`w-5 h-5 ${accentColor}`} />
                 </div>
                 <h3 className="font-semibold text-[#1a202c] mb-2">{t(key)}</h3>
@@ -388,23 +413,28 @@ function CtaBanner() {
   const t = useTranslations("nav");
 
   return (
-    <section className="bg-[#0F172A] py-16 border-t border-slate-800">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <div className="inline-flex items-center gap-2 text-red-300 text-sm font-medium mb-4">
-          <Globe className="w-4 h-4" />
-          <span>Local Israeli team · Fast response · Technical consultation</span>
-        </div>
-        <h2 className="text-3xl font-bold text-white mb-4">Ready to find the right product?</h2>
-        <p className="text-slate-400 mb-8 max-w-xl mx-auto">
-          Contact our team for technical consultation, custom specifications, or pricing.
-        </p>
-        <Link
-          href="/contact"
-          className="inline-flex items-center gap-2 bg-[#CC1C1C] text-white font-semibold px-10 py-4 rounded-lg hover:bg-[#A01515] transition-colors duration-200 text-lg cursor-pointer shadow-lg"
-        >
-          {t("contact")}
-          <ArrowRight className="w-5 h-5" />
-        </Link>
+    <section className="relative bg-[#0F172A] py-16 border-t border-slate-800 overflow-hidden">
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+        <div className="w-[600px] h-[300px] bg-[#CC1C1C]/10 rounded-full blur-3xl animate-glow-pulse" />
+      </div>
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <FadeUp>
+          <div className="inline-flex items-center gap-2 text-red-300 text-sm font-medium mb-4">
+            <Globe className="w-4 h-4" />
+            <span>Local Israeli team · Fast response · Technical consultation</span>
+          </div>
+          <h2 className="text-3xl font-bold text-white mb-4">Ready to find the right product?</h2>
+          <p className="text-slate-400 mb-8 max-w-xl mx-auto">
+            Contact our team for technical consultation, custom specifications, or pricing.
+          </p>
+          <Link
+            href="/contact"
+            className="inline-flex items-center gap-2 bg-[#CC1C1C] text-white font-semibold px-10 py-4 rounded-lg hover:bg-[#A01515] hover:scale-[1.03] active:scale-[0.98] transition-all duration-200 text-lg cursor-pointer shadow-lg"
+          >
+            {t("contact")}
+            <ArrowRight className="w-5 h-5" />
+          </Link>
+        </FadeUp>
       </div>
     </section>
   );
