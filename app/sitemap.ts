@@ -22,7 +22,7 @@ function urls(path: string, priority: number, changeFrequency: MetadataRoute.Sit
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const goreProductUrls = GORE_PRODUCTS.flatMap((p) =>
+  const goreProductUrls = GORE_PRODUCTS.filter((p) => !p.delisted).flatMap((p) =>
     urls(`/companies/gore/products/${p.id}`, 0.75, "monthly")
   );
   const tsubakiProductUrls = TSUBAKI_PRODUCTS.flatMap((p) =>

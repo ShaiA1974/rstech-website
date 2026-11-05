@@ -79,7 +79,7 @@ const PRODUCT_LINES = [
   },
   {
     name: "Vents & Filtration",
-    items: ["Automotive & Aerospace Vents", "Protective Vent Membranes", "Moisture Management", "Contamination Prevention"],
+    items: ["Equipment & Electronics Vents", "Protective Vent Membranes", "Moisture Management", "Contamination Prevention"],
     color: "border-green-200 bg-green-50",
     dot: "bg-green-500",
     image: "/products/gore/vent-pe-pressure.jpg",

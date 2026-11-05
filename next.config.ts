@@ -11,6 +11,16 @@ const nextConfig: NextConfig = {
       { source: "/contact", destination: "/en/contact", permanent: true },
       { source: "/companies", destination: "/en/companies", permanent: true },
       { source: "/knowledge-base", destination: "/en/knowledge-base", permanent: true },
+      // Automotive & packaging vent product pages were removed from the
+      // catalog; 301 their indexed URLs to the Gore products page so existing
+      // search rankings and links transfer. The per-part-number landing pages
+      // under /companies/gore/parts/ stay live for part-number searches.
+      {
+        source:
+          "/:locale(en|he)/companies/gore/products/:id(vent-auto-acoustic|vent-auto-battery|vent-auto-electronics|vent-auto-lighting|vent-auto-powertrain|vent-pkg-liners|vent-pkg-plugin)",
+        destination: "/:locale/companies/gore/products",
+        permanent: true,
+      },
     ];
   },
   async headers() {

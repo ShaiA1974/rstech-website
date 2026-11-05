@@ -20,6 +20,12 @@ export type GoreProduct = {
   imageUrl?: string;
   /** Orderable part numbers listed on gore.com, grouped by model/series */
   partNumbers?: GorePartNumberEntry[];
+  /**
+   * Removed from catalog listings, navigation and sitemap. The data stays so
+   * the /companies/gore/parts/[partNumber] landing pages keep serving
+   * part-number searches; the product page itself 301-redirects.
+   */
+  delisted?: boolean;
 };
 
 export const GORE_INDUSTRIES = [
@@ -542,6 +548,7 @@ export const GORE_PRODUCTS: GoreProduct[] = [
   // ─── VENTS › AUTOMOTIVE ───────────────────────────────────────────────────
   {
     id: "vent-auto-acoustic",
+    delisted: true,
     name: "Automotive Acoustic Vents",
     description:
       "Gore acoustic ePTFE vents for automotive speakers and microphone assemblies. Balance pressure while maintaining acoustic performance and preventing water ingress.",
@@ -558,6 +565,7 @@ export const GORE_PRODUCTS: GoreProduct[] = [
   },
   {
     id: "vent-auto-battery",
+    delisted: true,
     name: "Automotive Battery Vents",
     description:
       "ePTFE membrane vents for EV battery packs, safely venting pressure from thermal events while blocking liquid water and contaminants from entering the housing.",
@@ -577,6 +585,7 @@ export const GORE_PRODUCTS: GoreProduct[] = [
   },
   {
     id: "vent-auto-electronics",
+    delisted: true,
     name: "Automotive Electronics Vents",
     description:
       "Pressure equalization vents for ECUs, control modules, and sensors. Prevent condensation and seal failure caused by thermal pressure cycling inside automotive housings.",
@@ -621,6 +630,7 @@ export const GORE_PRODUCTS: GoreProduct[] = [
   },
   {
     id: "vent-auto-lighting",
+    delisted: true,
     name: "Exterior Lighting Vents",
     description:
       "Waterproof pressure equalization vents for automotive headlamps, tail lamps, and LED assemblies. Prevent fogging and extend lamp housing lifetime.",
@@ -666,6 +676,7 @@ export const GORE_PRODUCTS: GoreProduct[] = [
   },
   {
     id: "vent-auto-powertrain",
+    delisted: true,
     name: "Automotive Powertrain Vents",
     description:
       "High-temperature ePTFE vents for transmissions, axles, and powertrain housings. Vent pressure differentials without allowing fluid or contaminant intrusion.",
@@ -878,6 +889,7 @@ export const GORE_PRODUCTS: GoreProduct[] = [
   // ─── VENTS › PACKAGING ────────────────────────────────────────────────────
   {
     id: "vent-pkg-liners",
+    delisted: true,
     name: "Packaging Liners",
     description:
       "Gore ePTFE liner membranes for pharmaceutical, specialty chemical, and food packaging — controlling gas exchange and moisture while maintaining product integrity.",
@@ -900,6 +912,7 @@ export const GORE_PRODUCTS: GoreProduct[] = [
   },
   {
     id: "vent-pkg-plugin",
+    delisted: true,
     name: "Plug-In Packaging Vents",
     description:
       "Plug-in ePTFE membrane vents for drums, containers, and specialty packaging requiring controlled vapor exchange and protection against liquid ingress.",

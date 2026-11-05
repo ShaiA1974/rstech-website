@@ -92,12 +92,14 @@ export default async function GorePartsIndexPage({ params }: Props) {
                         <p className="text-sm text-[#7A8A99] mt-0.5 max-w-xl">{product.description}</p>
                       </div>
                       <div className="flex items-center gap-3 shrink-0">
-                        <Link
-                          href={`/companies/gore/products/${product.id}`}
-                          className="text-sm font-medium text-[#CC1C1C] hover:underline whitespace-nowrap"
-                        >
-                          Product page →
-                        </Link>
+                        {!product.delisted && (
+                          <Link
+                            href={`/companies/gore/products/${product.id}`}
+                            className="text-sm font-medium text-[#CC1C1C] hover:underline whitespace-nowrap"
+                          >
+                            Product page →
+                          </Link>
+                        )}
                         <a
                           href={product.goreUrl}
                           target="_blank"

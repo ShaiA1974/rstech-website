@@ -13,7 +13,7 @@ type Props = { params: Promise<{ locale: string; productId: string }> };
 
 export async function generateStaticParams() {
   const locales = ["en", "he"];
-  return GORE_PRODUCTS.flatMap((p) =>
+  return GORE_PRODUCTS.filter((p) => !p.delisted).flatMap((p) =>
     locales.map((locale) => ({ locale, productId: p.id }))
   );
 }
@@ -21,7 +21,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale, productId } = await params;
   const product = GORE_PRODUCTS.find((p) => p.id === productId);
-  if (!product) return {};
+  if (!product || product.delisted) return {};
   return {
     title: `${product.name} — Gore Products via RSTECH Electronics Israel`,
     description: product.description,
@@ -59,7 +59,7 @@ export default async function GoreProductPage({ params }: Props) {
   setRequestLocale(locale);
 
   const product = GORE_PRODUCTS.find((p) => p.id === productId);
-  if (!product) notFound();
+  if (!product || product.delisted) notFound();
 
   const Icon = CATEGORY_ICON[product.category] ?? Cable;
   const gradient = CATEGORY_GRADIENT[product.category] ?? CATEGORY_GRADIENT.cables;
@@ -67,7 +67,7 @@ export default async function GoreProductPage({ params }: Props) {
 
   // Related products: same subcategory, exclude self
   const related = GORE_PRODUCTS.filter(
-    (p) => p.subcategory === product.subcategory && p.id !== product.id
+    (p) => !p.delisted && p.subcategory === product.subcategory && p.id !== product.id
   ).slice(0, 3);
 
   return (

@@ -70,7 +70,11 @@ export default async function GorePartNumberPage({ params }: Props) {
     (pn) => pn.number !== decoded
   );
 
-  const productPageHref = `/companies/gore/products/${product.id}`;
+  // Delisted products no longer have their own page; send "product page"
+  // links to the Gore products catalog instead.
+  const productPageHref = product.delisted
+    ? "/companies/gore/products"
+    : `/companies/gore/products/${product.id}`;
   const canonicalUrl = `https://www.rstech.co.il/en/companies/gore/parts/${partNumber}`;
 
   // JSON-LD: single Product with this exact MPN

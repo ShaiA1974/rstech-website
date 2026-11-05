@@ -31,6 +31,7 @@ export default function GoreProductsClient() {
 
   const filtered = useMemo(() => {
     return GORE_PRODUCTS.filter((p) => {
+      if (p.delisted) return false;
       const catMatch = activeCategory === "all" || p.category === activeCategory;
       const indMatch = activeIndustry === "All" || p.industries.includes(activeIndustry);
       return catMatch && indMatch;
